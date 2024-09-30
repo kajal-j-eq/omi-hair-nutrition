@@ -1,0 +1,22 @@
+.featured-in {
+    display: flex;
+    justify-content: center;
+    &__content {
+        padding-top: 66px;
+        padding-bottom: 66px;
+        display: flex;
+        justify-content: space-between;
+
+        >:nth-child(1) {
+            font-size: 28px;
+        }
+
+        div {
+            img {
+                width: 123.2px;
+                height: 32px;
+            }
+        }
+    }
+
+}

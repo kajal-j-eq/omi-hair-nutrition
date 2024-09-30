@@ -1,0 +1,413 @@
+.hair-nutrition {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFAF2;
+
+    
+    @include media1500 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include media1500-min {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include media360-min {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__content {
+        display: flex;
+
+        &-left {
+            width: 613px;
+
+            #slider1 {
+                width: 100%;
+                border-radius: 8px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            #slider2 {
+                width: 100%;
+                border-radius: 8px;
+
+                img {
+                    height: 80px;
+                    width: 80px;
+                }
+
+                .slick-prev,
+                .slick-next {
+                    display: block;
+                    background-color: #2E1A4A;
+                    border-radius: 8.56px;
+                }
+
+            }
+
+
+        }
+
+        &-right {
+            width: 554px;
+            margin-left: 79px;
+            display: block;
+
+            >div:first-child {
+                background-color: white;
+
+                >p {
+                    margin: 0;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    padding-top: 30px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+
+                >div {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    padding-top: 28px;
+                    padding-bottom: 22px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    >:nth-child(1) {
+                        width: 126px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 18px;
+                        font-weight: 450;
+                        line-height: 0.83;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    :nth-child(2) {
+                        align-items: center;
+                    }
+
+                }
+
+            }
+
+            &__reviewSection {
+                margin-top: 28px;
+                display: flex;
+
+                >:nth-child(2) {
+                    padding-left: 8px;
+                    font-size: 16px;
+                    line-height: 0.73;
+                }
+            }
+
+            >:nth-child(3) {
+                >:nth-child(1) {
+                    margin-top: 28px;
+                    font-size: 52px;
+                    font-weight: 375;
+                    line-height: 0.83;
+                }
+
+                >:nth-child(2) {
+                    padding-top: 28px;
+                    line-height: 0.73;
+
+                    >:nth-child(1) {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    >:nth-child(2) {
+                        padding-top: 14px;
+                        font-size: 16px;
+                        font-weight: 400;
+
+                    }
+                }
+
+                >:nth-child(3) {
+                    padding-top: 28px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22.4px;
+                }
+            }
+
+            &__subscription {
+                margin-top: 28px;
+                cursor: pointer;
+
+                >:nth-child(1) {
+                    font-size: 24px;
+                    font-weight: 375;
+                    line-height: 0.83;
+                }
+
+                >:nth-child(2) {
+                    display: none;
+                    margin-top: 26px;
+                    padding-top: 20px;
+                    padding-left: 20px;
+                    padding-bottom: 20px;
+                    padding-right: 23px;
+                    background-color: white;
+
+                    >:nth-child(1) {
+                        display: flex;
+                        align-items: center;
+
+                        >input[type="radio"] {
+                            width: 26px;
+                            height: 26px;
+                            accent-color: black;
+                        }
+
+                        >label {
+                            padding-left: 6px;
+                            font-size: 20px;
+                            font-weight: 375;
+                            line-height: 0.71;
+                        }
+                    }
+
+                    >:nth-child(2) {
+                        padding-top: 20px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .mostPopular_plan,
+                        .bestValue_plan {
+                            width: 247px;
+
+                            >:nth-child(1) {
+                                width: 113px;
+                                margin-left: 20px;
+                                padding-top: 9px;
+                                padding-bottom: 9px;
+                                position: relative;
+                                color: white;
+                                background-color: #2E1A4A;
+                                font-size: 12px;
+                                font-weight: 700;
+                                line-height: 0.71;
+                                border-radius: 5px;
+                                display: flex;
+                                justify-content: center;
+                            }
+
+                            >:nth-child(2) {
+                                margin-left: 0px;
+                                border: 3px solid #2E1A4A;
+                                margin-top: -15px;
+                                border-radius: 8px;
+                                padding-top: 27px;
+                                padding-left: 20px;
+
+                                >:nth-child(2) {
+                                    margin-top: 17px;
+                                }
+
+                                >:nth-child(3) {
+                                    margin-top: 17px;
+                                    margin-bottom: 21px;
+                                    width: 115px;
+                                    font-size: 12px;
+                                    font-weight: 800;
+                                    line-height: 0.71;
+                                    color: #2E1A4A;
+                                    background: #2E1A4A1A;
+                                    padding-top: 9px;
+                                    padding-bottom: 9px;
+                                    display: flex;
+                                    justify-content: center;
+                                    border-radius: 70px;
+                                }
+                            }
+                        }
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+                        padding-top: 20px;
+                        display: flex;
+
+                        >li:first-child {
+                            padding-left: 0px;
+                        }
+
+                        li {
+                            padding-left: 20px;
+                            display: flex;
+                            font-size: 16px;
+                            font-weight: 400;
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 8px;
+                            }
+                        }
+
+                    }
+                }
+
+                >:nth-child(3) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px;
+                    background: white;
+                    margin-top: 26px;
+
+                    >:nth-child(1) {
+                        display: flex;
+                        align-items: center;
+
+                        >input[type="radio"] {
+                            width: 26px;
+                            height: 26px;
+                            accent-color: black;
+                        }
+
+                        >label {
+                            padding-left: 6px;
+                            font-size: 20px;
+                            font-weight: 375;
+                            line-height: 0.71;
+                        }
+                    }
+
+                    >:nth-child(2) {
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 0.71;
+                    }
+                }
+            }
+
+            >:nth-child(5) {
+                >:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #F4B4A4;
+                    border-radius: 120px;
+                    color: white;
+                    padding-top: 21px;
+                    padding-bottom: 21px;
+                    font-size: 20px;
+                    font-weight: 800;
+
+                    img {
+                        width: 22px;
+                        height: 18px;
+                        padding-left: 16px;
+                    }
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    list-style-type: none;
+
+                    >:nth-child(1) img {
+                        width: 22px;
+                        height: 22px;
+                        padding-right: 6px;
+                    }
+
+                    li {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            padding-right: 15.37px;
+                            width: 30.75px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+
+            >:nth-child(6) {
+                margin-top: 28px;
+                border-top: 1px solid #000000;
+
+                >:nth-child(1) {
+                    padding: 0;
+                    margin: 0;
+                    padding-top: 28px;
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        >:nth-child(1) {
+                            font-size: 36px;
+                            font-weight: 450;
+                            line-height: 0.83;
+                        }
+
+                        >:nth-child(2) {
+                            margin-top: 19px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 0.83;
+                        }
+                    }
+
+                }
+
+                >:nth-child(2) {
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 28px;
+                    position: relative;
+                    display: block;
+                    list-style: none;
+
+                    li {
+                        border-top: 1px solid #000000;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+
+                    >:last-child {
+                        border-bottom: 1px solid black;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+}

@@ -1,0 +1,61 @@
+.uspa {
+    background-color: #2E1A4A;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1300px;
+    }
+
+    // .slick-initialized .slick-slide {
+    //     display: flex;
+    // }
+    @include media1500-min {
+        &__row {
+            display: flex;
+            @include align-items(Center);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.36;
+
+            >ul {
+                display: flex;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                width: 100%;
+                >li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 400px;
+                    border-right: 1px solid;
+
+                    img {
+                        height: 32px;
+                        width: 32px;
+                    }
+
+                    p {
+                        margin: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                li:last-child {
+                    border-right: none;
+                    /* No border for the last child */
+                }
+            }
+
+            &__line {
+                border: 1px solid white;
+            }
+        }
+
+    }
+
+}

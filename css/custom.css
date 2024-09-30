@@ -1,0 +1,706 @@
+.uspa {
+  background-color: #2E1A4A;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.uspa .container {
+  width: 1300px;
+}
+@media only screen and (min-width: 1500px) {
+  .uspa__row {
+    display: flex;
+    -moz-align-items: Center;
+    -ms-align-items: Center;
+    align-items: Center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.36;
+  }
+  .uspa__row > ul {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .uspa__row > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-right: 1px solid;
+  }
+  .uspa__row > ul > li img {
+    height: 32px;
+    width: 32px;
+  }
+  .uspa__row > ul > li p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .uspa__row > ul li:last-child {
+    border-right: none;
+    /* No border for the last child */
+  }
+  .uspa__row__line {
+    border: 1px solid white;
+  }
+}
+
+.hair-nutrition {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFAF2;
+}
+@media only screen and (max-width: 1500px) {
+  .hair-nutrition {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .hair-nutrition {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .hair-nutrition {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.hair-nutrition__content {
+  display: flex;
+}
+.hair-nutrition__content-left {
+  width: 613px;
+}
+.hair-nutrition__content-left #slider1 {
+  width: 100%;
+  border-radius: 8px;
+}
+.hair-nutrition__content-left #slider1 img {
+  height: 100%;
+  width: 100%;
+}
+.hair-nutrition__content-left #slider2 {
+  width: 100%;
+  border-radius: 8px;
+}
+.hair-nutrition__content-left #slider2 img {
+  height: 80px;
+  width: 80px;
+}
+.hair-nutrition__content-left #slider2 .slick-prev,
+.hair-nutrition__content-left #slider2 .slick-next {
+  display: block;
+  background-color: #2E1A4A;
+  border-radius: 8.56px;
+}
+.hair-nutrition__content-right {
+  width: 554px;
+  margin-left: 79px;
+  display: block;
+}
+.hair-nutrition__content-right > div:first-child {
+  background-color: white;
+}
+.hair-nutrition__content-right > div:first-child > p {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.hair-nutrition__content-right > div:first-child > div {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 28px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.hair-nutrition__content-right > div:first-child > div > :nth-child(1) {
+  width: 126px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 0.83;
+}
+.hair-nutrition__content-right > div:first-child > div > :nth-child(1) img {
+  width: 40px;
+  height: 40px;
+}
+.hair-nutrition__content-right > div:first-child > div :nth-child(2) {
+  align-items: center;
+}
+.hair-nutrition__content-right__reviewSection {
+  margin-top: 28px;
+  display: flex;
+}
+.hair-nutrition__content-right__reviewSection > :nth-child(2) {
+  padding-left: 8px;
+  font-size: 16px;
+  line-height: 0.73;
+}
+.hair-nutrition__content-right > :nth-child(3) > :nth-child(1) {
+  margin-top: 28px;
+  font-size: 52px;
+  font-weight: 375;
+  line-height: 0.83;
+}
+.hair-nutrition__content-right > :nth-child(3) > :nth-child(2) {
+  padding-top: 28px;
+  line-height: 0.73;
+}
+.hair-nutrition__content-right > :nth-child(3) > :nth-child(2) > :nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+}
+.hair-nutrition__content-right > :nth-child(3) > :nth-child(2) > :nth-child(2) {
+  padding-top: 14px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hair-nutrition__content-right > :nth-child(3) > :nth-child(3) {
+  padding-top: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+.hair-nutrition__content-right__subscription {
+  margin-top: 28px;
+  cursor: pointer;
+}
+.hair-nutrition__content-right__subscription > :nth-child(1) {
+  font-size: 24px;
+  font-weight: 375;
+  line-height: 0.83;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) {
+  display: none;
+  margin-top: 26px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 23px;
+  background-color: white;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(1) > input[type=radio] {
+  width: 26px;
+  height: 26px;
+  accent-color: black;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(1) > label {
+  padding-left: 6px;
+  font-size: 20px;
+  font-weight: 375;
+  line-height: 0.71;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .mostPopular_plan,
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .bestValue_plan {
+  width: 247px;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .mostPopular_plan > :nth-child(1),
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .bestValue_plan > :nth-child(1) {
+  width: 113px;
+  margin-left: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  position: relative;
+  color: white;
+  background-color: #2E1A4A;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0.71;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .mostPopular_plan > :nth-child(2),
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .bestValue_plan > :nth-child(2) {
+  margin-left: 0px;
+  border: 3px solid #2E1A4A;
+  margin-top: -15px;
+  border-radius: 8px;
+  padding-top: 27px;
+  padding-left: 20px;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .mostPopular_plan > :nth-child(2) > :nth-child(2),
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .bestValue_plan > :nth-child(2) > :nth-child(2) {
+  margin-top: 17px;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .mostPopular_plan > :nth-child(2) > :nth-child(3),
+.hair-nutrition__content-right__subscription > :nth-child(2) > :nth-child(2) .bestValue_plan > :nth-child(2) > :nth-child(3) {
+  margin-top: 17px;
+  margin-bottom: 21px;
+  width: 115px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 0.71;
+  color: #2E1A4A;
+  background: rgba(46, 26, 74, 0.1019607843);
+  padding-top: 9px;
+  padding-bottom: 9px;
+  display: flex;
+  justify-content: center;
+  border-radius: 70px;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 20px;
+  display: flex;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) ul > li:first-child {
+  padding-left: 0px;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) ul li {
+  padding-left: 20px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hair-nutrition__content-right__subscription > :nth-child(2) ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.hair-nutrition__content-right__subscription > :nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  margin-top: 26px;
+}
+.hair-nutrition__content-right__subscription > :nth-child(3) > :nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.hair-nutrition__content-right__subscription > :nth-child(3) > :nth-child(1) > input[type=radio] {
+  width: 26px;
+  height: 26px;
+  accent-color: black;
+}
+.hair-nutrition__content-right__subscription > :nth-child(3) > :nth-child(1) > label {
+  padding-left: 6px;
+  font-size: 20px;
+  font-weight: 375;
+  line-height: 0.71;
+}
+.hair-nutrition__content-right__subscription > :nth-child(3) > :nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 0.71;
+}
+.hair-nutrition__content-right > :nth-child(5) > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F4B4A4;
+  border-radius: 120px;
+  color: white;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.hair-nutrition__content-right > :nth-child(5) > :nth-child(1) img {
+  width: 22px;
+  height: 18px;
+  padding-left: 16px;
+}
+.hair-nutrition__content-right > :nth-child(5) ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.hair-nutrition__content-right > :nth-child(5) ul > :nth-child(1) img {
+  width: 22px;
+  height: 22px;
+  padding-right: 6px;
+}
+.hair-nutrition__content-right > :nth-child(5) ul li {
+  display: flex;
+  align-items: center;
+}
+.hair-nutrition__content-right > :nth-child(5) ul li img {
+  padding-right: 15.37px;
+  width: 30.75px;
+  height: 20px;
+}
+.hair-nutrition__content-right > :nth-child(6) {
+  margin-top: 28px;
+  border-top: 1px solid #000000;
+}
+.hair-nutrition__content-right > :nth-child(6) > :nth-child(1) {
+  padding: 0;
+  margin: 0;
+  padding-top: 28px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.hair-nutrition__content-right > :nth-child(6) > :nth-child(1) li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.hair-nutrition__content-right > :nth-child(6) > :nth-child(1) li > :nth-child(1) {
+  font-size: 36px;
+  font-weight: 450;
+  line-height: 0.83;
+}
+.hair-nutrition__content-right > :nth-child(6) > :nth-child(1) li > :nth-child(2) {
+  margin-top: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.83;
+}
+.hair-nutrition__content-right > :nth-child(6) > :nth-child(2) {
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+  position: relative;
+  display: block;
+  list-style: none;
+}
+.hair-nutrition__content-right > :nth-child(6) > :nth-child(2) li {
+  border-top: 1px solid #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.hair-nutrition__content-right > :nth-child(6) > :nth-child(2) > :last-child {
+  border-bottom: 1px solid black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.star_rating {
+  display: flex;
+  align-items: center;
+}
+.star_rating img {
+  width: 100px;
+  height: 16px;
+}
+
+.container1286 {
+  width: 1286px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container1500 {
+  width: 1286px;
+}
+
+.featured-in {
+  display: flex;
+  justify-content: center;
+}
+.featured-in__content {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  display: flex;
+  justify-content: space-between;
+}
+.featured-in__content > :nth-child(1) {
+  font-size: 28px;
+}
+.featured-in__content div img {
+  width: 123.2px;
+  height: 32px;
+}
+
+.hair-loss {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1500px) {
+  .hair-loss {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.hair-loss__content {
+  display: flex;
+}
+.hair-loss__content-left img {
+  width: 710px;
+  height: 791px;
+}
+.hair-loss__content-right {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 100px;
+  padding-right: 107px;
+}
+.hair-loss__content-right > :nth-child(1) {
+  margin-top: 49.5px;
+  font-size: 52px;
+  font-weight: 375;
+  line-height: 1;
+}
+.hair-loss__content-right > :nth-child(2) {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.14;
+}
+.hair-loss__content-right > :nth-child(3) {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+}
+.hair-loss__content-right > :nth-child(3) img {
+  width: 20px;
+  height: 20px;
+  padding-right: 8.5px;
+}
+.hair-loss__content-right > :nth-child(3) > :nth-child(1) {
+  margin-top: 0px;
+}
+.hair-loss__content-right > :nth-child(3) > li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 0.73;
+  margin-top: 7px;
+}
+.hair-loss__content-right > :nth-child(4) {
+  margin-top: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.clinically-proven {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1500px) {
+  .clinically-proven {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.clinically-proven__content {
+  display: flex;
+}
+.clinically-proven__content-left {
+  background-color: #2E1A4A;
+  color: white;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  padding-left: 107px;
+  padding-right: 73px;
+}
+.clinically-proven__content-left > :nth-child(1) {
+  padding-top: 23.5px;
+  padding-bottom: 34.5px;
+  width: 590px;
+}
+.clinically-proven__content-left > :nth-child(1) > :nth-child(1) {
+  font-size: 52px;
+  font-weight: 375;
+  line-height: 1;
+}
+.clinically-proven__content-left > :nth-child(1) > :nth-child(2) {
+  margin-top: 26PX;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 0.83;
+}
+.clinically-proven__content-left > :nth-child(2) {
+  padding: 0;
+  margin: 0;
+}
+.clinically-proven__content-left > :nth-child(2) > li {
+  display: flex;
+}
+.clinically-proven__content-left > :nth-child(2) > li img {
+  width: 100px;
+  height: 100px;
+}
+.clinically-proven__content-left > :nth-child(2) > li > div {
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+  padding-left: 26px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.clinically-proven__content-left > :nth-child(2) > li > div > :nth-child(1) {
+  font-size: 28px;
+  font-weight: 450;
+  line-height: 0.9;
+}
+.clinically-proven__content-left > :nth-child(2) > li > div > :nth-child(2) {
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 1;
+}
+.clinically-proven__content-left > :nth-child(2) > li:nth-child(2) {
+  padding-top: 25px;
+}
+.clinically-proven__content-left > :nth-child(3) {
+  margin: 0;
+  width: 340px;
+  margin-top: 50px;
+  width: 100%;
+}
+.clinically-proven__content-left > :nth-child(3) > :nth-child(1) {
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background: #F4B4A4;
+  border-radius: 120px;
+}
+.clinically-proven__content-left > :nth-child(3) > :nth-child(1) img {
+  width: 22px;
+  height: 18px;
+  margin-left: 16px;
+}
+.clinically-proven__content-left > :nth-child(3) > :nth-child(2) {
+  display: flex;
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+  margin-top: 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0.73;
+}
+.clinically-proven__content-left > :nth-child(3) > :nth-child(2) img {
+  width: 100px;
+  margin-right: 8px;
+}
+.clinically-proven__content-right img {
+  height: 100%;
+  width: 100%;
+}
+
+.clinically-proven-results {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0px;
+  overflow: hidden;
+}
+.clinically-proven-results__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.clinically-proven-results__content > :nth-child(1) > :nth-child(1) {
+  font-size: 52px;
+  font-weight: 375;
+  line-height: 1;
+}
+.clinically-proven-results__content > :nth-child(1) > :nth-child(2) {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 0.83;
+}
+.clinically-proven-results__content .clinicallyProven-slider {
+  margin: auto;
+  margin-top: 55px;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+.clinically-proven-results__content .clinicallyProven-slider figure {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 8px;
+  padding-bottom: 90%;
+}
+.clinically-proven-results__content .clinicallyProven-slider figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.clinically-proven-results__content .clinicallyProven-slider .slick-track {
+  display: flex;
+  align-items: center;
+}
+.clinically-proven-results__content .clinicallyProven-slider .slick-slide {
+  opacity: 0.5;
+  padding: 20px 20px;
+}
+.clinically-proven-results__content .clinicallyProven-slider .slick-slide.slick-current {
+  opacity: 1;
+}
+.clinically-proven-results__content .clinicallyProven-slider .slick-slide.slick-current figure {
+  padding-bottom: 100%;
+}
+.clinically-proven-results__content .clinicallyProven-slider .slick-list {
+  overflow: visible;
+  margin: 0 -25px;
+}
+.clinically-proven-results__content .clinicallyProven-slider button {
+  position: absolute;
+  top: 50%;
+}
+.clinically-proven-results__content .clinicallyProven-slider .clinicallyRes-prev {
+  background-color: #F4B4A4;
+  left: -59px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+.clinically-proven-results__content .clinicallyProven-slider .clinicallyRes-next {
+  right: -59px;
+  background-color: #F4B4A4;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+.clinically-proven-results__content .clinicallyProven-slider .slick-dots > li > button {
+  font-size: 24px;
+  color: #F4B4A4;
+}/*# sourceMappingURL=custom.css.map */
