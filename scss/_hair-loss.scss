@@ -1,73 +1,161 @@
 .hair-loss {
     display: flex;
     justify-content: center;
-    @include media1500 {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @include media991-min {
+            flex-direction: row;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
         &-left {
-            img {
-                width: 710px;
-                height: 791px;
+            position: relative;
+            width: 100%;
+
+            @include media991-min {
+                width: 47.3%;
             }
 
+            .mb_title {
+                font-family: $secondary-font;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 1;
+
+                @include media991-min {
+                    display: none;
+                }
+            }
+
+            figure {
+                position: relative;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                padding-bottom: 111.5%;
+                border-radius: 5px;
+                @include media1500-min {
+                    padding-bottom: 111.5%;
+                }
+                img {
+                    position: absolute;
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
 
         &-right {
-            padding-top: 45px;
-            padding-bottom: 45px;
-            padding-left: 100px;
-            padding-right: 107px;
+            display: flex;
+            width: 100%;
+            align-items: center;
 
-            >:nth-child(1) {
-                margin-top: 49.5px;
-                font-size: 52px;
-                font-weight: 375;
-                line-height: 1;
+            @include media991-min {
+                width: 52.7%;
+                padding: 20px 40px;
             }
 
-            >:nth-child(2) {
-                margin-top: 24px;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 1.14;
+            @include media1500-min {
+                padding: 20px 90px;
             }
 
-            >:nth-child(3) {
-                list-style-type: none;
+            .title {
                 padding: 0;
                 margin: 0;
-                margin-top: 24px;
+                display: none;
+                max-width: 563px;
+                width: 100%;
+                font-family: $secondary-font;
 
-                img {
-                    width: 20px;
-                    height: 20px;
-                    padding-right: 8.5px;
+                @include media991-min {
+                    display: block;
+                    font-size: 35px;
+                    font-weight: 375;
+                    line-height: 1;
                 }
 
-                >:nth-child(1) {
-                    margin-top: 0px;
-                }
-
-                >li {
-                    display: flex;
-                    align-items: center;
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 0.73;
-                    margin-top: 7px;
+                @include media1500-min {
+                    font-size: 52px;
                 }
             }
 
-            >:nth-child(4) {
-                margin-top: 26px;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 1;
+            .desc {
+                max-width: 563px;
+                width: 100%;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.3;
+                    margin-top: 25px;
+
+                    @include media991-min {
+                        margin-top: 20px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.14;
+                    }
+
+                    @include media1500-min {
+                        margin-top: 25px;
+                        font-size: 16px;
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 25px;
+
+                    >li::before {
+                        content: '';
+                        position: relative;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='15' viewBox='0 0 20 15' fill='none'%3E%3Cpath d='M1.66406 7.4974L7.21308 13.3307L18.3307 1.66406' stroke='black' stroke-width='2.08333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                        width: 20px;
+                        height: 20px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        margin-right: 10px;
+                    }
+
+                    >:nth-child(1) {
+                        margin-top: 0px;
+                    }
+
+                    >li {
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 0.73;
+                        margin-top: 7px;
+
+                        @include media991-min {
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 0.73;
+                        }
+
+                        @include media1500-min {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
             }
         }
 

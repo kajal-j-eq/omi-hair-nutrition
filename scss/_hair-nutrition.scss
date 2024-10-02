@@ -1,70 +1,142 @@
-.hair-nutrition {
+.product {
     display: flex;
     justify-content: center;
     background-color: #FFFAF2;
+    padding-top: 90px;
 
-    
-    @include media1500 {
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
-
-    @include media1500-min {
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
-
-    @include media360-min {
-        padding-left: 20px;
-        padding-right: 20px;
+    @include media991 {
+        padding: 20px 20px 0px 20px;
     }
 
     &__content {
         display: flex;
+        width: 100%;
+
+        @include media991 {
+            flex-direction: column;
+        }
 
         &-left {
-            width: 613px;
+            max-width: 47.668%;
 
-            #slider1 {
-                width: 100%;
-                border-radius: 8px;
+            @include media991 {
+                max-width: 100%;
+            }
 
+            .product-slider-for {
                 img {
-                    height: 100%;
                     width: 100%;
+                    height: auto;
                 }
             }
 
-            #slider2 {
+            .product-prev-container {
+                overflow: hidden;
                 width: 100%;
-                border-radius: 8px;
+                position: relative;
+                margin-top: 22px;
+                display: flex;
+                justify-content: center;
 
-                img {
-                    height: 80px;
-                    width: 80px;
+                @include media991 {
+                    margin-top: 21px;
                 }
 
-                .slick-prev,
-                .slick-next {
-                    display: block;
+                .product-slider-nav {
+                    width: 70%;
+
+                    img {
+                        max-width: 80px;
+                        max-height: 80px;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 8px;
+
+                        @include media991 {
+                            max-width: 65px;
+                            max-height: 65px;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        @include media500 {
+                            max-width: 44px;
+                            max-height: 44px;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    max-width: 28px;
+                    max-height: 28px;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+
+                    @include media991 {
+                        max-width: 20px;
+                        max-height: 20px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .product-prev {
+                    top: 34%;
+                    left: 0;
                     background-color: #2E1A4A;
-                    border-radius: 8.56px;
+                    border-radius: 14px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    padding: 7px;
+
+                    @include media991 {
+                        top: 30%;
+                    }
                 }
 
+                .product-next {
+                    top: 34%;
+                    right: 0;
+                    background-color: #2E1A4A;
+                    border-radius: 14px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    padding: 7px;
+
+                    @include media991 {
+                        top: 30%;
+                    }
+                }
             }
-
-
         }
 
         &-right {
-            width: 554px;
+            max-width: 52.332%;
             margin-left: 79px;
             display: block;
 
-            >div:first-child {
+            @include media991 {
+                margin-left: 0px;
+            }
+
+            @include media991 {
+                max-width: 100%;
+            }
+
+            .review {
                 background-color: white;
 
-                >p {
+                @include media991 {
+                    display: none;
+                }
+
+                p {
                     margin: 0;
                     padding-left: 30px;
                     padding-right: 30px;
@@ -74,7 +146,7 @@
                     line-height: 18px;
                 }
 
-                >div {
+                .reviewSection {
                     padding-left: 30px;
                     padding-right: 30px;
                     padding-top: 28px;
@@ -82,7 +154,7 @@
                     display: flex;
                     justify-content: space-between;
 
-                    >:nth-child(1) {
+                    &-userName {
                         width: 126px;
                         display: flex;
                         justify-content: space-between;
@@ -97,109 +169,256 @@
                         }
                     }
 
-                    :nth-child(2) {
+                    &-rating {
+                        display: flex;
                         align-items: center;
+
+                        img {
+                            max-width: 100px;
+                        }
                     }
 
                 }
 
             }
 
-            &__reviewSection {
+            .StartRating {
+                @include media991 {
+                    display: none;
+                }
+
                 margin-top: 28px;
                 display: flex;
+                align-items: center;
 
-                >:nth-child(2) {
+                &-img {
+                    img {
+                        max-width: 100px;
+                    }
+                }
+
+                &-rev {
                     padding-left: 8px;
                     font-size: 16px;
                     line-height: 0.73;
                 }
             }
 
-            >:nth-child(3) {
-                >:nth-child(1) {
+            .about {
+                .title {
+                    margin: 0;
+                    padding: 0;
                     margin-top: 28px;
                     font-size: 52px;
-                    font-weight: 375;
                     line-height: 0.83;
+
+                    font-family: $secondary-font;
+
+                    @include media991 {
+                        font-size: 28px;
+                    }
                 }
 
-                >:nth-child(2) {
-                    padding-top: 28px;
+                .desc {
+                    margin-top: 28px;
                     line-height: 0.73;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    @include media991 {
+                        margin-top: 20px;
+                    }
 
                     >:nth-child(1) {
                         font-size: 18px;
                         font-weight: 500;
+
+                        @include media991 {
+                            font-size: 16px;
+                            line-height: 1;
+                        }
                     }
 
                     >:nth-child(2) {
-                        padding-top: 14px;
+                        margin-top: 14px;
                         font-size: 16px;
                         font-weight: 400;
 
+                        @include media991 {
+                            font-size: 14px;
+                        }
+                    }
+
+                    >:nth-child(3) {
+                        padding-top: 28px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22.4px;
+
+                        @include media991 {
+                            display: none;
+                        }
                     }
                 }
 
-                >:nth-child(3) {
-                    padding-top: 28px;
-                    font-size: 16px;
+            }
+
+            .mb_Rev {
+                @include media991-min {
+                    display: none;
+                }
+
+                display: flex;
+                font-size: 13px;
+                align-items: center;
+                font-weight: 700;
+                margin-top: 19px;
+
+                img {
+                    width: 63px;
+                    height: 11px;
+                    margin-right: 4px;
+                }
+
+                span {
+                    margin-left: 2px;
                     font-weight: 400;
-                    line-height: 22.4px;
                 }
             }
 
-            &__subscription {
-                margin-top: 28px;
-                cursor: pointer;
+            .mb-review {
+                background-color: white;
+                padding: 16px 22px;
+                margin-top: 18px;
 
-                >:nth-child(1) {
-                    font-size: 24px;
-                    font-weight: 375;
-                    line-height: 0.83;
+                @include media991-min {
+                    display: none;
                 }
 
-                >:nth-child(2) {
-                    display: none;
-                    margin-top: 26px;
-                    padding-top: 20px;
-                    padding-left: 20px;
-                    padding-bottom: 20px;
-                    padding-right: 23px;
-                    background-color: white;
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
 
-                    >:nth-child(1) {
+                .reviewSection {
+                    margin-top: 16px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &-userName {
+                        max-width: 101px;
+                        width: 100%;
                         display: flex;
+                        justify-content: space-between;
                         align-items: center;
+                        font-size: 14px;
+                        font-weight: 450;
+                        line-height: 0.83;
 
-                        >input[type="radio"] {
-                            width: 26px;
-                            height: 26px;
-                            accent-color: black;
-                        }
-
-                        >label {
-                            padding-left: 6px;
-                            font-size: 20px;
-                            font-weight: 375;
-                            line-height: 0.71;
+                        img {
+                            width: 40px;
+                            height: 40px;
                         }
                     }
 
-                    >:nth-child(2) {
+                    &-rating {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            max-width: 70px;
+                        }
+                    }
+
+                }
+
+            }
+
+            .subscription {
+                margin-top: 28px;
+                cursor: pointer;
+
+                @include media991 {
+                    margin-top: 17px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 0.83;
+                    font-family: $secondary-font;
+                }
+
+                .SubscriptionBoxDisplay {
+                    display: none;
+                    padding: 20px 23px 20px 20px;
+                    background-color: white;
+
+                    @include media991 {
+                        padding: 18px 14px;
+                    }
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+
+                        input[type="radio"] {
+                            width: 26px;
+                            height: 26px;
+                            accent-color: black;
+
+                            @include media991 {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+
+                        label {
+                            font-weight: 500;
+                            padding-left: 6px;
+                            font-size: 20px;
+                            line-height: 0.71;
+                            font-family: $secondary-font;
+
+                            @include media991 {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .plans {
                         padding-top: 20px;
                         display: flex;
                         justify-content: space-between;
 
+                        @include media991 {
+                            display: block;
+                        }
+
+                        .mostPopular_plan {
+                            margin-right: 14px;
+
+                            @include media991 {
+                                margin-bottom: 14px;
+                            }
+                        }
+
                         .mostPopular_plan,
                         .bestValue_plan {
-                            width: 247px;
+                            width: 100%;
 
-                            >:nth-child(1) {
+                            @include media991 {
+                                width: 100%;
+                            }
+
+                            .title {
                                 width: 113px;
                                 margin-left: 20px;
-                                padding-top: 9px;
-                                padding-bottom: 9px;
+                                padding: 9px 0px;
                                 position: relative;
                                 color: white;
                                 background-color: #2E1A4A;
@@ -211,20 +430,45 @@
                                 justify-content: center;
                             }
 
-                            >:nth-child(2) {
+                            .info {
                                 margin-left: 0px;
                                 border: 3px solid #2E1A4A;
                                 margin-top: -15px;
                                 border-radius: 8px;
-                                padding-top: 27px;
+                                padding-top: 20px;
                                 padding-left: 20px;
 
+                                @include media991 {
+                                    padding: 16px 16px 0px;
+                                }
+
+                                p {
+                                    margin: 0;
+                                    padding: 0;
+
+                                }
+
+                                >:nth-child(1) {
+                                    font-size: 18px;
+
+                                    @include media991 {
+                                        font-size: 16px;
+                                    }
+                                }
+
                                 >:nth-child(2) {
-                                    margin-top: 17px;
+                                    font-size: 14px;
+                                    margin-top: 6px;
+                                    width: 208px;
+
+                                    @include media991 {
+                                        font-size: 11px;
+                                        width: 100%;
+                                    }
                                 }
 
                                 >:nth-child(3) {
-                                    margin-top: 17px;
+                                    margin-top: 14px;
                                     margin-bottom: 21px;
                                     width: 115px;
                                     font-size: 12px;
@@ -237,6 +481,13 @@
                                     display: flex;
                                     justify-content: center;
                                     border-radius: 70px;
+
+                                    @include media991 {
+                                        width: 105px;
+                                        font-size: 11px;
+                                        margin-top: 12px;
+                                        margin-bottom: 6px;
+                                    }
                                 }
                             }
                         }
@@ -246,8 +497,13 @@
                         margin: 0;
                         padding: 0;
                         list-style-type: none;
-                        padding-top: 20px;
+                        margin-top: 20px;
                         display: flex;
+
+                        @include media991 {
+                            display: block;
+                            margin-top: 11px;
+                        }
 
                         >li:first-child {
                             padding-left: 0px;
@@ -259,17 +515,27 @@
                             font-size: 16px;
                             font-weight: 400;
 
+                            @include media991 {
+                                padding-left: 0px;
+                                font-size: 14px;
+                            }
+
                             img {
                                 width: 20px;
                                 height: 20px;
                                 margin-right: 8px;
+
+                                @include media991 {
+                                    width: 18px;
+                                    height: 18px;
+                                }
                             }
                         }
 
                     }
                 }
 
-                >:nth-child(3) {
+                .purchase {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -277,49 +543,81 @@
                     background: white;
                     margin-top: 26px;
 
-                    >:nth-child(1) {
+                    @include media991 {
+                        padding: 14px;
+                    }
+
+                    .radioBtn {
                         display: flex;
                         align-items: center;
 
-                        >input[type="radio"] {
+                        input[type="radio"] {
                             width: 26px;
                             height: 26px;
                             accent-color: black;
+
+                            @include media991 {
+                                width: 20px;
+                                height: 20px;
+                            }
                         }
 
-                        >label {
+                        label {
                             padding-left: 6px;
                             font-size: 20px;
                             font-weight: 375;
                             line-height: 0.71;
+
+                            @include media991 {
+                                font-size: 18px;
+                            }
                         }
                     }
 
-                    >:nth-child(2) {
+                    .rupees {
                         font-size: 20px;
                         font-weight: 700;
                         line-height: 0.71;
+
+                        @include media991 {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
 
-            >:nth-child(5) {
-                >:nth-child(1) {
+            .addToCart {
+                margin-top: 28px;
+
+                @include media991 {
+                    margin-top: 22px;
+                }
+
+                a {
+                    width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     background: #F4B4A4;
                     border-radius: 120px;
                     color: white;
-                    padding-top: 21px;
-                    padding-bottom: 21px;
+                    padding: 21px 0px;
                     font-size: 20px;
                     font-weight: 800;
+                    text-decoration: none;
+
+                    @include media991 {
+                        padding: 17.5px;
+                    }
 
                     img {
                         width: 22px;
                         height: 18px;
-                        padding-left: 16px;
+                        margin-left: 16px;
+
+                        @include media991 {
+                            margin-left: 17.5px;
+                        }
                     }
                 }
 
@@ -328,39 +626,79 @@
                     margin: 0;
                     margin-top: 16px;
                     display: flex;
-                    justify-content: space-between;
                     list-style-type: none;
+                    font-size: 14px;
+                    justify-content: space-between;
+
+                    @include media991 {
+                        display: block;
+                    }
 
                     >:nth-child(1) img {
-                        width: 22px;
+                        width: 27px;
                         height: 22px;
                         padding-right: 6px;
+
+                        @include media991 {
+                            width: 25px;
+                            height: 20px;
+                        }
                     }
 
                     li {
+                        overflow: hidden;
                         display: flex;
                         align-items: center;
+                        justify-content: space-between;
+
+                        @include media991 {
+                            justify-content: center;
+                        }
 
                         img {
-                            padding-right: 15.37px;
-                            width: 30.75px;
+                            // padding-right: 15.37px;
+                            width: 37.5px;
                             height: 20px;
+                        }
+                    }
+
+                    >:nth-child(2) {
+                        @include media991 {
+                            margin-top: 16px;
+                            justify-content: space-between;
                         }
                     }
                 }
             }
 
-            >:nth-child(6) {
+            .mb-desc {
+                @include media991-min {
+                    display: none;
+                }
+
+                margin-top: 17px;
+                font-size: 14px;
+            }
+
+            .pctAndAcco {
                 margin-top: 28px;
                 border-top: 1px solid #000000;
 
-                >:nth-child(1) {
+                @include media991 {
+                    margin-top: 22px;
+                }
+
+                .percentage {
                     padding: 0;
                     margin: 0;
-                    padding-top: 28px;
+                    margin-top: 28px;
                     list-style-type: none;
                     display: flex;
                     justify-content: space-between;
+
+                    @include media991 {
+                        margin-top: 22px;
+                    }
 
                     li {
                         display: flex;
@@ -371,6 +709,10 @@
                             font-size: 36px;
                             font-weight: 450;
                             line-height: 0.83;
+
+                            @include media991 {
+                                font-size: 28px;
+                            }
                         }
 
                         >:nth-child(2) {
@@ -378,12 +720,18 @@
                             font-size: 16px;
                             font-weight: 500;
                             line-height: 0.83;
+
+                            @include media500 {
+                                width: 93px;
+                                font-size: 13px;
+                                margin-top: 14px;
+                            }
                         }
                     }
 
                 }
 
-                >:nth-child(2) {
+                .accordion-list {
                     padding: 0;
                     margin: 0;
                     margin-top: 28px;
@@ -395,6 +743,15 @@
                         border-top: 1px solid #000000;
                         padding-top: 20px;
                         padding-bottom: 20px;
+
+                        .title {
+                            font-size: 20px;
+                            font-family: $secondary-font;
+
+                            @include media991 {
+                                font-size: 18px;
+                            }
+                        }
                     }
 
                     >:last-child {

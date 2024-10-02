@@ -1,128 +1,233 @@
 .clinically-proven {
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    @include media1500 {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+
 
     &__content {
         display: flex;
-
+        @include media991 {
+            display: block;
+        }
         &-left {
-            // max-width: 720px;
+            @include media991 {
+                padding: 36px 20px;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
             background-color: #2E1A4A;
             color: white;
-            padding-top: 95px;
-            padding-bottom: 95px;
-            padding-left: 107px;
-            padding-right: 73px;
-
-            >:nth-child(1) {
-                padding-top: 23.5px;
-                padding-bottom: 34.5px;
-                width: 590px;
-
-                >:nth-child(1) {
-                    font-size: 52px;
-                    font-weight: 375;
-                    line-height: 1;
-                }
-
-                >:nth-child(2) {
-                    margin-top: 26PX;
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 0.83;
-                }
+            @include media991-min {
+                width: 52.667%;
             }
+            &__content {
+                margin: 45.5px 73px 45.5px 127px;
 
-            >:nth-child(2) {
-                padding: 0;
-                margin: 0;
-
-                >li {
+                @include media991 {
+                    margin: 0px;
                     display: flex;
-
-                    img {
-                        width: 100px;
-                        height: 100px;
-                    }
-
-                    >div {
-                        padding-top: 17.5px;
-                        padding-bottom: 17.5px;
-                        padding-left: 26px;
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-
-                        >:nth-child(1) {
-                            font-size: 28px;
-                            font-weight: 450;
-                            line-height: 0.9;
-                        }
-
-                        >:nth-child(2) {
-                            padding-top: 25px;
-                            font-size: 18px;
-                            font-weight: 450;
-                            line-height: 1;
-                        }
-                    }
-                }
-
-                >li:nth-child(2) {
-                    padding-top: 25px;
-                }
-            }
-
-            >:nth-child(3) {
-                margin: 0;
-                width: 340px;
-                margin-top: 50px;
-                width: 100%;
-
-                >:nth-child(1) {
-                    width: 340px;
-                    display: flex;
-                    justify-content: center;
-                    padding-top: 23px;
-                    padding-bottom: 23px;
-                    background: #F4B4A4;
-                    border-radius: 120px;
-
-                    img {
-                        width: 22px;
-                        height: 18px;
-                        margin-left: 16px;
-                    }
-                }
-
-                >:nth-child(2) {
-                    display: flex;
-                    text-align: center;
-                    justify-content: start;
                     align-items: center;
-                    margin-top: 22px;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 0.73;
+                    flex-direction: column;
+                }
+                .title {
+                    &__1 {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 52px;
+                        line-height: 1;
+                        font-family: $secondary-font;
+
+                        @include media991 {
+                            font-size: 28px;
+                        }
+                    }
+
+                    &__2 {
+                        margin-top: 26PX;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 0.83;
+                    }
+                }
+                .mb_img {
+                    @include media991-min {
+                        display: none;
+                    }
+
+                    overflow: hidden;
+                    margin-top: 32px;
 
                     img {
-                        width: 100px;
-                        margin-right: 8px;
+                        border-radius: 5px;
+                        max-width: 320px;
+                        width: 100%;
+                        height: 294px;
+                    }
+                }
+
+                .days {
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 50px;
+
+                    @include media991 {
+                        margin-top: 32px;
+                    }
+
+                    .day0,
+                    .day90 {
+                        display: flex;
+
+                        img {
+                            max-width: 100px;
+                            max-height: 100px;
+                            width: 100%;
+                            height: 100%;
+
+                            @include media991 {
+                                max-width: 64px;
+                                max-height: 64px;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        &-data {
+                            padding: 17.5px 0px 17.5px 26px;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            @include media991 {
+                                margin-left: 18px;
+                                padding: 3px 0px;
+                            }
+
+                            >:nth-child(1) {
+                                font-size: 28px;
+                                font-weight: 450;
+                                line-height: 0.9;
+                                font-family: $secondary-font;
+
+                                @include media991 {
+                                    font-size: 22px;
+                                }
+                            }
+
+                            >:nth-child(2) {
+                                font-size: 18px;
+                                font-weight: 450;
+                                line-height: 1;
+
+                                @include media991 {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+
+                    >li:nth-child(2) {
+                        margin-top: 25px;
+                    }
+                }
+
+                .button {
+                    margin: 0;
+                    margin-top: 50px;
+                    max-width: 444px;
+                    width: 100%;
+
+                    @include media991 {
+                        margin-top: 32px;
+                    }
+
+                    a {
+                        width: 340px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 23px 0px;
+                        background: #F4B4A4;
+                        border-radius: 120px;
+                        text-decoration: none;
+                        color: white;
+
+                        @include media991 {
+                            font-size: 18px;
+                            padding: 17.5px 0px;
+                            width: 320px;
+
+                        }
+
+                        img {
+                            width: 22px;
+                            height: 18px;
+                            margin-left: 16px;
+                        }
+                    }
+
+                    >:nth-child(2) {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 22px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 0.73;
+
+                        @include media991 {
+                            font-size: 11px;
+                        }
+
+                        img {
+                            max-width: 100px;
+                            width: 100%;
+                            margin-right: 8px;
+
+                            @include media991 {
+                                max-width: 63px;
+                                width: 100%;
+                                max-height: 11px;
+                                height: 100%;
+                                // margin-right: 8px;
+                            }
+                        }
                     }
                 }
             }
         }
 
         &-right {
-            img {
-                height: 100%;
+            @include media991 {
+                display: none;
+            }
+
+            position: relative;
+            width: 100%;
+
+            @include media991-min {
+                width: 47.333%;
+            }
+
+            figure {
+                position: relative;
                 width: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                padding-bottom: 125.497%;
+
+                img {
+                    position: absolute;
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }

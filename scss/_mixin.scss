@@ -43,11 +43,40 @@
 }
 
 
-@mixin media360-min {
-    @media only screen and (min-width: 360px) {
+
+@mixin media500{
+    @media only screen and (max-width: 500px) {
         @content;
     }
 }
+@mixin media768-min {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin media768 {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media991 {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin media991-min {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin media1250-min {
+    @media only screen and (min-width: 1250px) {
+        @content;
+    }
+}
+
 @mixin media1500-min {
     @media only screen and (min-width: 1500px) {
         @content;
@@ -58,3 +87,6 @@
         @content;
     }
 }
+
+$primary-font: 'Manrope';
+$secondary-font: 'Chronicle-Display';

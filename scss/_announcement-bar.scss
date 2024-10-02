@@ -2,60 +2,66 @@
     background-color: #2E1A4A;
     width: 100%;
     color: white;
-    display: flex;
-    justify-content: center;
-
+    overflow: hidden;
     .container {
+        margin: auto;
         width: 1300px;
     }
-
-    // .slick-initialized .slick-slide {
-    //     display: flex;
-    // }
-    @include media1500-min {
-        &__row {
-            display: flex;
-            @include align-items(Center);
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 1.36;
-
-            >ul {
-                display: flex;
-                margin-top: 15px;
-                margin-bottom: 15px;
-                width: 100%;
-                >li {
+    &__row {
+        @include align-items(Center);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.36;
+    
+        ul {
+            overflow: hidden;
+            margin: 0;
+            width: 100%;
+            padding: 15px 0px;
+    
+            @include media991-min {
+                font-size: 18px;
+            }
+    
+            li {
+                padding: 0;
+                div {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 400px;
-                    border-right: 1px solid;
-
-                    img {
-                        height: 32px;
-                        width: 32px;
+                    @include media991-min{
+                        justify-content: center;
                     }
-
+    
+                    img {
+                        height: 24px;
+                        width: 24px;
+    
+                        @include media991-min {
+                            height: 32px;
+                            width: 32px;
+                        }
+                    }
+    
                     p {
                         margin: 0;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
+    
+                    border-right: 1px solid;
+    
                 }
-
-                li:last-child {
-                    border-right: none;
-                    /* No border for the last child */
-                }
+    
             }
-
-            &__line {
-                border: 1px solid white;
+    
+            li:last-child {
+                border-right: none;
+                /* No border for the last child */
             }
         }
-
+    
+        &__line {
+            border: 1px solid white;
+        }
     }
-
 }
