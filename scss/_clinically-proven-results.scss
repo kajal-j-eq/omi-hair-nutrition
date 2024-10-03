@@ -1,8 +1,12 @@
 .clinically-proven-results {
   display: flex;
   justify-content: center;
-  padding: 90px 0px;
+  padding: 90px 20px;
   overflow: hidden;
+
+  @include media991 {
+    padding: 36px 20px;
+  }
 
   &__content {
     display: flex;
@@ -10,18 +14,33 @@
     justify-content: center;
     text-align: center;
 
+    @include media991 {
+      text-align: start;
+    }
+
     .titles {
-      &-mainT {
+      h2{
+        margin: 0;
         font-size: 52px;
-        font-weight: 375;
         line-height: 1;
+        font-family: $secondary-font;
+
+        @include media991 {
+          font-size: 28px;
+        }
       }
 
-      &-subT {
+      p{
+        margin: 0;
+        padding: 0;
         margin-top: 25px;
         font-size: 18px;
         font-weight: 400;
         line-height: 0.83;
+
+        @include media991 {
+          font-size: 16px;
+        }
       }
     }
 
@@ -31,6 +50,10 @@
       width: 100%;
       max-width: 600px;
       position: relative;
+
+      @include media991 {
+        margin-top: 32px;
+      }
 
       figure {
         position: relative;
@@ -56,6 +79,11 @@
       .slick-slide {
         opacity: 0.5;
         padding: 20px 20px;
+
+        @include media991 {
+          padding: 0px 20px;
+        }
+
       }
 
       .slick-slide.slick-current {
@@ -73,7 +101,9 @@
       }
 
       button {
+        z-index: 1;
         position: absolute;
+        cursor: pointer;
         top: 50%;
       }
 
@@ -86,6 +116,10 @@
         height: 25px;
         display: flex;
         align-items: center;
+
+        @include media991 {
+          left: -18px;
+        }
       }
 
       .clinicallyRes-next {
@@ -97,11 +131,80 @@
         height: 25px;
         display: flex;
         align-items: center;
+
+        @include media991 {
+          right: -18px;
+        }
       }
 
-      .slick-dots>li>button {
-        font-size: 24px;
-        color: #F4B4A4;
+      .slick-dots li button {
+        font-size: 0;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid #F4B4A4;
+        background-color: white;
+      }
+
+      .slick-dots li.slick-active button {
+        background-color: #f4b4a4;
+      }
+    }
+
+    .about {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      text-align: start;
+
+      @include media991 {
+        display: block;
+        margin-top: 10px;
+        padding: 0px 16.5px;
+      }
+
+      &__data {
+        max-width: 287.5px;
+        width: 100%;
+
+        @include media991 {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #000000;
+          padding-bottom: 22px;
+          margin-top: 26px;
+          max-width: 100%;
+        }
+
+        h3 {
+          margin: 0;
+          width: 100%;
+          border-bottom: 1px solid #000000;
+          font-size: 60px;
+          font-family: $secondary-font;
+          padding-bottom: 17px;
+
+          @include media991 {
+            border-bottom: none;
+            padding-bottom: 0px;
+            font-size: 36px;
+            width: 25.396%;
+          }
+        }
+
+        .info {
+          margin: 0;
+          padding: 0;
+          padding-top: 24px;
+          font-size: 18px;
+
+          @include media991 {
+            padding-top: 0px;
+            font-size: 16px;
+            margin-left: 20px;
+          }
+        }
       }
     }
   }

@@ -1,45 +1,50 @@
 $(document).ready(function () {
 
     // S-2 uspa-slider
-    $('.uspaSlider').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        autoplay: true,
-        centerMode: true,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
-        ]
-    });
+    if ($('.js-uspaSlider')?.length > 0) {
+        $('.js-uspaSlider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            centerMode: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+            ]
+        });
+    }
 
     // S-3 product slider
-    $('.product-slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.product-slider-nav'
-    });
-    
-    $('.product-slider-nav').slick({
-        prevArrow: $('.product-prev'),
-        nextArrow: $('.product-next'),
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.product-slider-for',
-        dots: true,
-        arrows: true,
-        focusOnSelect: true
-    });
+    if ($('.js-product-slider-for')?.length > 0) {
+        $('.js-product-slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.js-product-slider-nav'
+        });
+    }
 
+    if ($('.js-product-slider-nav')?.length > 0) {
+        $('.js-product-slider-nav').slick({
+            prevArrow: $('.product-prev'),
+            nextArrow: $('.product-next'),
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.js-product-slider-for',
+            dots: true,
+            arrows: true,
+            focusOnSelect: true
+        });
+    }
     // S-3 Subscription
     let lastChecked = null;
     const SubscriptionBoxDisplay = document.querySelector('.SubscriptionBoxDisplay');
@@ -101,13 +106,24 @@ $(document).ready(function () {
     });
 
     // S-7 Clinically Proven Res
-        $('.clinicallyProven-slider-container').slick({
+    if ($('.js-CP-Slider-Container')?.length > 0) {
+        $('.js-CP-Slider-Container').slick({
             prevArrow: $('.clinicallyRes-prev'),
             nextArrow: $('.clinicallyRes-next'),
-            slidesToShow: 1, 
-            slidesToScroll: 1, 
-            dots:true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
             autoplaySpeed: 3000
-          });
-
+        });
+    }
+    if ($('.js-RH-Slider-container')?.length > 0) {
+        $('.js-RH-Slider-container').slick({
+            prevArrow: $('.regrowHair-slider-prev'),
+            nextArrow: $('.regrowHair-slider-next'),
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            autoplaySpeed: 3000
+        });
+    }
 });

@@ -1,0 +1,58 @@
+.regrowingHair{
+    padding: 0px 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #2E1A4A;
+    color: white;
+    .title{
+        h3{
+            margin: 0;
+            margin-top: 84px;
+            font-size: 52px;
+            font-family: $secondary-font;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            margin-top: 19px;
+        }
+    }
+    .regrowHair__Slider{
+        display: flex;
+        button{
+            cursor: pointer;
+        }
+        
+        .regrowHair-slider-prev {
+            background-color: #F4B4A4;
+            // left: -59px;
+            border: 1px solid transparent;
+            border-radius: 11px;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+    
+            @include media991 {
+              left: -18px;
+            }
+          }
+    
+          .regrowHair-slider-next {
+            // right: -59px;
+            background-color: #F4B4A4;
+            border: 1px solid transparent;
+            border-radius: 11px;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+    
+            @include media991 {
+              right: -18px;
+            }
+          }
+    }
+}

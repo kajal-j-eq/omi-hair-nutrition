@@ -91,7 +91,7 @@
     max-width: 100%;
   }
 }
-.product__content-left .product-slider-for img {
+.product__content-left .productSliderFor img {
   width: 100%;
   height: auto;
 }
@@ -108,10 +108,10 @@
     margin-top: 21px;
   }
 }
-.product__content-left .product-prev-container .product-slider-nav {
+.product__content-left .product-prev-container .productSliderNav {
   width: 70%;
 }
-.product__content-left .product-prev-container .product-slider-nav img {
+.product__content-left .product-prev-container .productSliderNav img {
   max-width: 80px;
   max-height: 80px;
   width: 100%;
@@ -119,7 +119,7 @@
   border-radius: 8px;
 }
 @media only screen and (max-width: 991px) {
-  .product__content-left .product-prev-container .product-slider-nav img {
+  .product__content-left .product-prev-container .productSliderNav img {
     max-width: 65px;
     max-height: 65px;
     width: 100%;
@@ -127,7 +127,7 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .product__content-left .product-prev-container .product-slider-nav img {
+  .product__content-left .product-prev-container .productSliderNav img {
     max-width: 44px;
     max-height: 44px;
     width: 100%;
@@ -141,6 +141,7 @@
   width: 100%;
   height: 100%;
   align-items: center;
+  cursor: pointer;
 }
 @media only screen and (max-width: 991px) {
   .product__content-left .product-prev-container button {
@@ -225,13 +226,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 18px;
-  font-weight: 450;
-  line-height: 0.83;
 }
 .product__content-right .review .reviewSection-userName img {
   width: 40px;
   height: 40px;
+}
+.product__content-right .review .reviewSection-userName h6 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 0.83;
+  font-family: "Chronicle-Display";
 }
 .product__content-right .review .reviewSection-rating {
   display: flex;
@@ -257,6 +262,10 @@
   padding-left: 8px;
   font-size: 16px;
   line-height: 0.73;
+}
+.product__content-right .StartRating-rev p {
+  padding: 0;
+  margin: 0;
 }
 .product__content-right .about .title {
   margin: 0;
@@ -332,7 +341,11 @@
   height: 11px;
   margin-right: 4px;
 }
-.product__content-right .mb_Rev span {
+.product__content-right .mb_Rev p {
+  padding: 0;
+  margin: 0;
+}
+.product__content-right .mb_Rev p span {
   margin-left: 2px;
   font-weight: 400;
 }
@@ -363,9 +376,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.product__content-right .mb-review .reviewSection-userName h6 {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
-  font-weight: 450;
   line-height: 0.83;
+  font-family: "Chronicle-Display";
 }
 .product__content-right .mb-review .reviewSection-userName img {
   width: 40px;
@@ -719,6 +736,10 @@
     display: none;
   }
 }
+.product__content-right .mb-desc p {
+  margin: 0;
+  padding: 0;
+}
 .product__content-right .pctAndAcco {
   margin-top: 28px;
   border-top: 1px solid #000000;
@@ -746,30 +767,34 @@
   flex-direction: column;
   text-align: center;
 }
-.product__content-right .pctAndAcco .percentage li > :nth-child(1) {
+.product__content-right .pctAndAcco .percentage li h4 {
+  margin: 0;
   font-size: 36px;
-  font-weight: 450;
   line-height: 0.83;
+  font-family: "Chronicle-Display";
 }
 @media only screen and (max-width: 991px) {
-  .product__content-right .pctAndAcco .percentage li > :nth-child(1) {
+  .product__content-right .pctAndAcco .percentage li h4 {
     font-size: 28px;
   }
 }
-.product__content-right .pctAndAcco .percentage li > :nth-child(2) {
+.product__content-right .pctAndAcco .percentage li p {
+  margin: 0;
+  padding: 0;
   margin-top: 19px;
   font-size: 16px;
   font-weight: 500;
   line-height: 0.83;
 }
 @media only screen and (max-width: 500px) {
-  .product__content-right .pctAndAcco .percentage li > :nth-child(2) {
+  .product__content-right .pctAndAcco .percentage li p {
     width: 93px;
     font-size: 13px;
     margin-top: 14px;
   }
 }
 .product__content-right .pctAndAcco .accordion-list {
+  cursor: pointer;
   padding: 0;
   margin: 0;
   margin-top: 28px;
@@ -782,12 +807,15 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.product__content-right .pctAndAcco .accordion-list li .title {
+.product__content-right .pctAndAcco .accordion-list li h5 {
+  margin: 0;
   font-size: 20px;
   font-family: "Chronicle-Display";
+  display: flex;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 991px) {
-  .product__content-right .pctAndAcco .accordion-list li .title {
+  .product__content-right .pctAndAcco .accordion-list li h5 {
     font-size: 18px;
   }
 }
@@ -1057,7 +1085,7 @@ body {
     padding: 20px 90px;
   }
 }
-.hair-loss__content-right .title {
+.hair-loss__content-right h2 {
   padding: 0;
   margin: 0;
   display: none;
@@ -1066,7 +1094,7 @@ body {
   font-family: "Chronicle-Display";
 }
 @media only screen and (min-width: 992px) {
-  .hair-loss__content-right .title {
+  .hair-loss__content-right h2 {
     display: block;
     font-size: 35px;
     font-weight: 375;
@@ -1074,7 +1102,7 @@ body {
   }
 }
 @media only screen and (min-width: 1500px) {
-  .hair-loss__content-right .title {
+  .hair-loss__content-right h2 {
     font-size: 52px;
   }
 }
@@ -1156,6 +1184,7 @@ body {
 @media only screen and (max-width: 991px) {
   .clinically-proven__content {
     display: block;
+    margin-top: 32px;
   }
 }
 .clinically-proven__content-left {
@@ -1187,26 +1216,36 @@ body {
     flex-direction: column;
   }
 }
-.clinically-proven__content-left__content .title__1 {
+.clinically-proven__content-left__content .title h2 {
   padding: 0;
   margin: 0;
   font-size: 52px;
   line-height: 1;
   font-family: "Chronicle-Display";
 }
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .title h2 {
+    font-size: 3.467vw;
+  }
+}
 @media only screen and (max-width: 991px) {
-  .clinically-proven__content-left__content .title__1 {
+  .clinically-proven__content-left__content .title h2 {
     font-size: 28px;
   }
 }
-.clinically-proven__content-left__content .title__2 {
+.clinically-proven__content-left__content .title h5 {
+  margin: 0;
   margin-top: 26PX;
   font-size: 18px;
   font-weight: 400;
   line-height: 0.83;
 }
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .title h5 {
+    font-size: 1.2vw;
+  }
+}
 .clinically-proven__content-left__content .mb_img {
-  overflow: hidden;
   margin-top: 32px;
 }
 @media only screen and (min-width: 992px) {
@@ -1240,6 +1279,16 @@ body {
   max-height: 100px;
   width: 100%;
   height: 100%;
+  font-family: "Chronicle-Display";
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .days .day0 img,
+  .clinically-proven__content-left__content .days .day90 img {
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .clinically-proven__content-left__content .days .day0 img,
@@ -1265,28 +1314,42 @@ body {
     padding: 3px 0px;
   }
 }
-.clinically-proven__content-left__content .days .day0-data > :nth-child(1),
-.clinically-proven__content-left__content .days .day90-data > :nth-child(1) {
+.clinically-proven__content-left__content .days .day0-data h4,
+.clinically-proven__content-left__content .days .day90-data h4 {
+  margin: 0;
   font-size: 28px;
-  font-weight: 450;
   line-height: 0.9;
   font-family: "Chronicle-Display";
 }
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .days .day0-data h4,
+  .clinically-proven__content-left__content .days .day90-data h4 {
+    font-size: 1.867vw;
+  }
+}
 @media only screen and (max-width: 991px) {
-  .clinically-proven__content-left__content .days .day0-data > :nth-child(1),
-  .clinically-proven__content-left__content .days .day90-data > :nth-child(1) {
+  .clinically-proven__content-left__content .days .day0-data h4,
+  .clinically-proven__content-left__content .days .day90-data h4 {
     font-size: 22px;
   }
 }
-.clinically-proven__content-left__content .days .day0-data > :nth-child(2),
-.clinically-proven__content-left__content .days .day90-data > :nth-child(2) {
+.clinically-proven__content-left__content .days .day0-data p,
+.clinically-proven__content-left__content .days .day90-data p {
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   font-weight: 450;
   line-height: 1;
 }
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .days .day0-data p,
+  .clinically-proven__content-left__content .days .day90-data p {
+    font-size: 1.2vw;
+  }
+}
 @media only screen and (max-width: 991px) {
-  .clinically-proven__content-left__content .days .day0-data > :nth-child(2),
-  .clinically-proven__content-left__content .days .day90-data > :nth-child(2) {
+  .clinically-proven__content-left__content .days .day0-data p,
+  .clinically-proven__content-left__content .days .day90-data p {
     font-size: 14px;
     font-weight: 400;
   }
@@ -1300,9 +1363,19 @@ body {
   max-width: 444px;
   width: 100%;
 }
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .button {
+    margin-top: 10px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .clinically-proven__content-left__content .button {
     margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
   }
 }
 .clinically-proven__content-left__content .button a {
@@ -1315,6 +1388,12 @@ body {
   border-radius: 120px;
   text-decoration: none;
   color: white;
+  font-weight: 800;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .button a {
+    padding: 17px 0px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .clinically-proven__content-left__content .button a {
@@ -1336,6 +1415,11 @@ body {
   font-weight: 400;
   line-height: 0.73;
 }
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .button > :nth-child(2) {
+    font-size: 1.067vw;
+  }
+}
 @media only screen and (max-width: 991px) {
   .clinically-proven__content-left__content .button > :nth-child(2) {
     font-size: 11px;
@@ -1345,6 +1429,12 @@ body {
   max-width: 100px;
   width: 100%;
   margin-right: 8px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .clinically-proven__content-left__content .button > :nth-child(2) img {
+    max-width: 70px;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .clinically-proven__content-left__content .button > :nth-child(2) img {
@@ -1389,8 +1479,13 @@ body {
 .clinically-proven-results {
   display: flex;
   justify-content: center;
-  padding: 90px 0px;
+  padding: 90px 20px;
   overflow: hidden;
+}
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results {
+    padding: 36px 20px;
+  }
 }
 .clinically-proven-results__content {
   display: flex;
@@ -1398,16 +1493,34 @@ body {
   justify-content: center;
   text-align: center;
 }
-.clinically-proven-results__content .titles-mainT {
-  font-size: 52px;
-  font-weight: 375;
-  line-height: 1;
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content {
+    text-align: start;
+  }
 }
-.clinically-proven-results__content .titles-subT {
+.clinically-proven-results__content .titles h2 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 1;
+  font-family: "Chronicle-Display";
+}
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .titles h2 {
+    font-size: 28px;
+  }
+}
+.clinically-proven-results__content .titles p {
+  margin: 0;
+  padding: 0;
   margin-top: 25px;
   font-size: 18px;
   font-weight: 400;
   line-height: 0.83;
+}
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .titles p {
+    font-size: 16px;
+  }
 }
 .clinically-proven-results__content .clinicallyProven-slider {
   margin: auto;
@@ -1415,6 +1528,11 @@ body {
   width: 100%;
   max-width: 600px;
   position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .clinicallyProven-slider {
+    margin-top: 32px;
+  }
 }
 .clinically-proven-results__content .clinicallyProven-slider figure {
   position: relative;
@@ -1440,6 +1558,11 @@ body {
   opacity: 0.5;
   padding: 20px 20px;
 }
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .clinicallyProven-slider .slick-slide {
+    padding: 0px 20px;
+  }
+}
 .clinically-proven-results__content .clinicallyProven-slider .slick-slide.slick-current {
   opacity: 1;
 }
@@ -1451,7 +1574,9 @@ body {
   margin: 0 -25px;
 }
 .clinically-proven-results__content .clinicallyProven-slider button {
+  z-index: 1;
   position: absolute;
+  cursor: pointer;
   top: 50%;
 }
 .clinically-proven-results__content .clinicallyProven-slider .clinicallyRes-prev {
@@ -1464,6 +1589,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .clinicallyProven-slider .clinicallyRes-prev {
+    left: -18px;
+  }
+}
 .clinically-proven-results__content .clinicallyProven-slider .clinicallyRes-next {
   right: -59px;
   background-color: #F4B4A4;
@@ -1474,7 +1604,383 @@ body {
   display: flex;
   align-items: center;
 }
-.clinically-proven-results__content .clinicallyProven-slider .slick-dots > li > button {
-  font-size: 24px;
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .clinicallyProven-slider .clinicallyRes-next {
+    right: -18px;
+  }
+}
+.clinically-proven-results__content .clinicallyProven-slider .slick-dots li button {
+  font-size: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #F4B4A4;
+  background-color: white;
+}
+.clinically-proven-results__content .clinicallyProven-slider .slick-dots li.slick-active button {
+  background-color: #f4b4a4;
+}
+.clinically-proven-results__content .about {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .about {
+    display: block;
+    margin-top: 10px;
+    padding: 0px 16.5px;
+  }
+}
+.clinically-proven-results__content .about__data {
+  max-width: 287.5px;
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .about__data {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 22px;
+    margin-top: 26px;
+    max-width: 100%;
+  }
+}
+.clinically-proven-results__content .about__data h3 {
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+  font-size: 60px;
+  font-family: "Chronicle-Display";
+  padding-bottom: 17px;
+}
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .about__data h3 {
+    border-bottom: none;
+    padding-bottom: 0px;
+    font-size: 36px;
+    width: 25.396%;
+  }
+}
+.clinically-proven-results__content .about__data .info {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  font-size: 18px;
+}
+@media only screen and (max-width: 991px) {
+  .clinically-proven-results__content .about__data .info {
+    padding-top: 0px;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+}
+
+.omiStory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.omiStory__content {
+  display: flex;
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content {
+    display: block;
+  }
+}
+.omiStory__content-left {
+  display: flex;
+  width: 100%;
+  background-color: #FFFAF2;
+  justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left {
+    padding: 36px 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .omiStory__content-left {
+    width: 52.667%;
+  }
+}
+.omiStory__content-left__content {
+  padding: 0px 100px 0px 127px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content {
+    padding: 0px;
+  }
+}
+.omiStory__content-left__content .desc h2 {
+  margin: 0;
+  font-size: 52px;
+  font-family: "Chronicle-Display";
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .omiStory__content-left__content .desc h2 {
+    font-size: 3.467vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content .desc h2 {
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.omiStory__content-left__content .desc p {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .omiStory__content-left__content .desc p {
+    font-size: 1.067vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content .desc p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+.omiStory__content-left__content .desc p span {
   color: #F4B4A4;
+}
+.omiStory__content-left__content .desc p:nth-of-type(2) {
+  margin-top: 22px;
+  font-size: 18px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .omiStory__content-left__content .desc p:nth-of-type(2) {
+    font-size: 1.2vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content .desc p:nth-of-type(2) {
+    margin-top: 13px;
+    font-size: 16px;
+  }
+}
+.omiStory__content-left__content .desc .mb_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+@media only screen and (min-width: 992px) {
+  .omiStory__content-left__content .desc .mb_img {
+    display: none;
+  }
+}
+.omiStory__content-left__content .desc .mb_img img {
+  border-radius: 5px;
+  max-width: 320px;
+  width: 100%;
+  max-height: 294px;
+  height: 100%;
+  margin-top: 0px;
+}
+.omiStory__content-left__content .desc img {
+  max-width: 183.23px;
+  width: 100%;
+  max-height: 41px;
+  height: 100%;
+  margin-top: 26px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .omiStory__content-left__content .desc img {
+    margin-top: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content .desc img {
+    max-width: 142.63px;
+    width: 100%;
+    max-height: 31.8px;
+    height: 100%;
+    margin-top: 22px;
+  }
+}
+.omiStory__content-left__content .button {
+  margin: 0;
+  margin-top: 50px;
+  max-width: 444px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .omiStory__content-left__content .button {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content .button {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+.omiStory__content-left__content .button a {
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 0px;
+  background: #F4B4A4;
+  border-radius: 120px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .omiStory__content-left__content .button a {
+    padding: 17px 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content .button a {
+    font-size: 18px;
+    padding: 17.5px 0px;
+    width: 320px;
+  }
+}
+.omiStory__content-left__content .button a img {
+  width: 22px;
+  height: 18px;
+  margin-left: 16px;
+}
+.omiStory__content-left__content .button .rev {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0.73;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .omiStory__content-left__content .button .rev {
+    font-size: 1.067vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content .button .rev {
+    font-size: 11px;
+  }
+}
+.omiStory__content-left__content .button .rev .star_rating_Img img {
+  max-width: 100px;
+  width: 100%;
+  margin-right: 8px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .omiStory__content-left__content .button .rev .star_rating_Img img {
+    max-width: 70px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-left__content .button .rev .star_rating_Img img {
+    max-width: 63px;
+    width: 100%;
+    max-height: 11px;
+    height: 100%;
+  }
+}
+.omiStory__content-right {
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .omiStory__content-right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .omiStory__content-right {
+    width: 47.333%;
+  }
+}
+.omiStory__content-right figure {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 98.595%;
+}
+.omiStory__content-right figure img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.regrowingHair {
+  padding: 0px 90px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #2E1A4A;
+  color: white;
+}
+.regrowingHair .title h3 {
+  margin: 0;
+  margin-top: 84px;
+  font-size: 52px;
+  font-family: "Chronicle-Display";
+}
+.regrowingHair .title p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  margin-top: 19px;
+}
+.regrowingHair .regrowHair__Slider {
+  display: flex;
+}
+.regrowingHair .regrowHair__Slider button {
+  cursor: pointer;
+}
+.regrowingHair .regrowHair__Slider .regrowHair-slider-prev {
+  background-color: #F4B4A4;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .regrowingHair .regrowHair__Slider .regrowHair-slider-prev {
+    left: -18px;
+  }
+}
+.regrowingHair .regrowHair__Slider .regrowHair-slider-next {
+  background-color: #F4B4A4;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .regrowingHair .regrowHair__Slider .regrowHair-slider-next {
+    right: -18px;
+  }
 }/*# sourceMappingURL=custom.css.map */

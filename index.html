@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="./css/plugins.css">
     <link rel="stylesheet" href="./css/custom.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
 
@@ -34,26 +36,26 @@
         <section class="uspa">
             <div class="container">
                 <div class="uspa__row">
-                    <ul class="uspa__row__col uspaSlider ">
-                        <li class="uspa__row__col__content">
+                    <ul class="js-uspaSlider ">
+                        <li>
                             <div>
-                                <img src="./images/AnnouncementBar_1.png" alt="">
+                                <img src="./images/uspa-1.png" alt="">
                                 <p>
                                     Deducted Shipping & Handling
                                 </p>
                             </div>
                         </li>
-                        <li class="uspa__row__col__content">
+                        <li>
                             <div>
-                                <img src="./images/AnnouncementBar_2.png" alt="">
+                                <img src="./images/uspa-2.png" alt="">
                                 <p>
                                     365 Day Happiness Guarantee
                                 </p>
                             </div>
                         </li>
-                        <li class="uspa__row__col__content">
+                        <li>
                             <div>
-                                <img src="./images/AnnouncementBar_3.png" alt="">
+                                <img src="./images/uspa-3.png" alt="">
                                 <p>
                                     90 Day Risk-Free Trial (Full Refund).
                                 </p>
@@ -69,7 +71,7 @@
             <div class="container1286">
                 <div class="product__content">
                     <div class="product__content-left">
-                        <div class="product-slider-for">
+                        <div class="js-product-slider-for productSliderFor">
                             <div>
                                 <img src="./images/Sec3_1.png" alt="">
                             </div>
@@ -96,7 +98,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </button>
-                            <div class="product-slider-nav">
+                            <div class="js-product-slider-nav productSliderNav">
                                 <div>
                                     <img src="./images/Sec3_1.png" alt="">
                                 </div>
@@ -133,7 +135,7 @@
                             <div class="reviewSection">
                                 <div class="reviewSection-userName">
                                     <img src="./images/Product_RightSec_CP.png" alt="">
-                                    Cheryl P.
+                                    <h6> Cheryl P.</h6>
                                 </div>
                                 <div class="reviewSection-rating">
                                     <img src="./images/riview.png" alt="">
@@ -146,7 +148,9 @@
                                 <img src="./images/riview.png" alt="">
                             </div>
                             <div class="StartRating-rev">
-                                Rated <strong>4.8/5</strong> Based on <strong>150+</strong> happy customers
+                                <p>
+                                    Rated <strong>4.8/5</strong> Based on <strong>150+</strong> happy customers
+                                </p>
                             </div>
                         </div>
 
@@ -171,7 +175,9 @@
                             </div>
                             <div class="mb_Rev">
                                 <img src="./images/riview.png" alt="">
-                                150 <span>reviews</span>
+                                <p>
+                                    150 <span>reviews</span>
+                                </p>
                             </div>
                         </div>
 
@@ -242,13 +248,17 @@
 
                         <div class="addToCart">
                             <a href="javascript:void(0)">
-                                Add to cart
+                                <span>
+                                    Add to cart
+                                </span>
                                 <img src="./images/Sec2_rightArrow.png" alt="">
                             </a>
                             <ul>
                                 <li>
                                     <img src="./images/Locked padlock.png" alt="">
-                                    safe & secure checkout
+                                    <span>
+                                        safe & secure checkout
+                                    </span>
                                 </li>
                                 <li>
                                     <img src="./images/visa-bw.png" alt="">
@@ -264,9 +274,12 @@
                         </div>
 
                         <div class="mb-desc">
-                            The once-a-day hair growth solution made with doctor-formulated, award-winning
-                            follicle-fortifying peptides <strong> reactivates your hair growth cycle</strong> to
-                            reverse thinning and hair loss with natural ingredients, keeping your scalp 100% drug-free.
+                            <p>
+                                The once-a-day hair growth solution made with doctor-formulated, award-winning
+                                follicle-fortifying peptides <strong> reactivates your hair growth cycle</strong> to
+                                reverse thinning and hair loss with natural ingredients, keeping your scalp 100%
+                                drug-free.
+                            </p>
                         </div>
 
                         <div class="mb-review">
@@ -277,7 +290,7 @@
                             <div class="reviewSection">
                                 <div class="reviewSection-userName">
                                     <img src="./images/Product_RightSec_CP.png" alt="">
-                                    Cheryl P.
+                                    <h6> Cheryl P.</h6>
                                 </div>
                                 <div class="reviewSection-rating">
                                     <img src="./images/riview.png" alt="">
@@ -288,21 +301,24 @@
                         <div class="pctAndAcco">
                             <ul class="percentage">
                                 <li>
-                                    <div>100%</div>
-                                    <div>Saw an increase in hair growth in 3 months*</div>
+                                    <h4>100%</h4>
+                                    <p>Saw an increase in hair growth in 3 months*</p>
                                 </li>
                                 <li>
-                                    <div>100%</div>
-                                    <div>Saw a decrease in hair loss in 3 months*</div>
+                                    <h4>100%</h4>
+                                    <p>Saw a decrease in hair loss in 3 months*</p>
                                 </li>
                                 <li>
-                                    <div>95%</div>
-                                    <div>Saw improvement in shine and brightness*</div>
+                                    <h4>95%</h4>
+                                    <p>Saw improvement in shine and brightness*</p>
                                 </li>
                             </ul>
                             <ul class="accordion-list">
                                 <li>
-                                    <div class="title">Clinical Results</div>
+                                    <h5 class="title">
+                                        Clinical Results
+                                        <span class="fas fa-chevron-down"></span>
+                                    </h5>
                                     <div class="answer">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur
                                         cupiditate reprehenderit fugiat eum corrupti nam dolores nostrum pariatur
@@ -310,7 +326,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="title">how it works</div>
+                                    <h5 class="title">
+                                        how it works
+                                        <span class="fas fa-chevron-down"></span>
+                                    </h5>
                                     <div class="answer">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur
                                         cupiditate reprehenderit fugiat eum corrupti nam dolores nostrum pariatur
@@ -318,7 +337,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="title">ingredients</div>
+                                    <h5 class="title">
+                                        ingredients
+                                        <span class="fas fa-chevron-down"></span>
+                                    </h5>
                                     <div class="answer">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur
                                         cupiditate reprehenderit fugiat eum corrupti nam dolores nostrum pariatur
@@ -326,7 +348,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="title">Sourcing</div>
+                                    <h5 class="title">
+                                        Sourcing
+                                        <span class="fas fa-chevron-down"></span>
+                                    </h5>
                                     <div class="answer">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur
                                         cupiditate reprehenderit fugiat eum corrupti nam dolores nostrum pariatur
@@ -334,7 +359,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="title">FAQs</div>
+                                    <h5 class="title">
+                                        FAQs
+                                        <span class="fas fa-chevron-down"></span>
+                                    </h5>
                                     <div class="answer">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur
                                         cupiditate reprehenderit fugiat eum corrupti nam dolores nostrum pariatur
@@ -414,7 +442,7 @@
                     </div>
                     <div class="hair-loss__content-right">
                         <div class="content">
-                            <h2 class="title">
+                            <h2>
                                 Turn Back The Clock On Hair Loss With OMI 
                             </h2>
                             <div class="desc">
@@ -469,12 +497,12 @@
                     <div class="clinically-proven__content-left">
                         <div class="clinically-proven__content-left__content">
                             <div class="title">
-                                <h2 class="title__1">
+                                <h2>
                                     Clinically Proven To Regrow Hair In As Little As 3 Months
                                 </h2>
-                                <div class="title__2">
+                                <h5>
                                     With up to 8X thicker hair 
-                                </div>
+                                </h5>
                             </div>
                             <div class="mb_img">
                                 <img src="./images/clinicallyProven_mb_img.jpg" alt="">
@@ -483,15 +511,15 @@
                                 <li class="day0">
                                     <img src="./images/clinicallyP_0day.png" alt="">
                                     <div class="day0-data">
-                                        <div>Day 0</div>
-                                        <div>Struggling with hair damage and hair loss</div>
+                                        <h4>Day 0</h4>
+                                        <p>Struggling with hair damage and hair loss</p>
                                     </div>
                                 </li>
                                 <li class="day90">
                                     <img src="./images/clinicallyP_90day.png" alt="">
                                     <div class="day90-data">
-                                        <div>Day 90</div>
-                                        <div>Hair is visibly fuller, thicker, stronger, and healthier </div>
+                                        <h4>Day 90</h4>
+                                        <p>Hair is visibly fuller, thicker, stronger, and healthier </p>
                                     </div>
                                 </li>
                             </ul>
@@ -520,6 +548,141 @@
             </div>
         </section>
 
+        <!-- Section-7 Clinically Proven Res -->
+        <section class="clinically-proven-results">
+            <div class="container1286">
+                <div class="clinically-proven-results__content">
+                    <div class="titles">
+                        <h2>Clinically-Proven Results In A Little As 90 Days</h2>
+                        <p>Here’s what clinical studies discovered from only 3 month’s use</p>
+                    </div>
+                    <div class="clinicallyProven-slider">
+                        <button class="clinicallyRes-prev">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.3176 14.9401L6.42763 10.0501C5.85013 9.47256 5.85013 8.52756 6.42763 7.95006L11.3176 3.06006"
+                                    stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="js-CP-Slider-Container">
+                            <div>
+                                <figure>
+                                    <img src="./images/clinicallyProvenResult-slider.png" alt="">
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./images/clinicallyProvenResult-slider.png" alt="">
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./images/clinicallyProvenResult-slider.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="clinicallyRes-next">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.6825 14.9401L11.5725 10.0501C12.15 9.47256 12.15 8.52756 11.5725 7.95006L6.6825 3.06006"
+                                    stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="about">
+                        <div class="about__data">
+                            <h3>8x</h3>
+                            <p class="info">More hair growth*</p>
+                        </div>
+                        <div class="about__data">
+                            <h3>46%</h3>
+                            <p class="info">Less hair loss**</p>
+                        </div>
+                        <div class="about__data">
+                            <h3>16X</h3>
+                            <p class="info">Stronger*</p>
+                        </div>
+                        <div class="about__data">
+                            <h3>59%</h3>
+                            <p class="info">Glossier and shinier*</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section-8 OMI Story  -->
+        <section class="omiStory">
+            <div class="container1500">
+                <div class="omiStory__content">
+                    <div class="omiStory__content-left">
+                        <div class="omiStory__content-left__content">
+                            <div class="desc">
+                                <h2>The OMI Story</h2>
+                                <p>
+                                    Hi, <strong>I’m Naomi.</strong> My passion for wellness began with personal health
+                                    challenges and has led
+                                    me on a global journey to discover powerful ingredients and expert advice. As a busy
+                                    CEO, wife, and mother, I've learned that small changes can significantly impact your
+                                    hair’s health and vitality, and I'm excited to share this knowledge with you.
+                                </p>
+                                <div class="mb_img">
+                                    <img src="./images/omiStory_right.png" alt="">
+                                </div>
+                                <p>
+                                    <strong><span>“</span>In my opinion, hair is never ‘just hair’. It’s a source of
+                                        pride and confidence in how
+                                        we feel about ourselves, and that’s something we all deserve. This is what
+                                        inspired me
+                                        to create OMI Hair Nutrition, so that we may hold on to our hair longer, and
+                                        have it
+                                        grow stronger and look as beautiful as we feel inside.<span>”</span> </strong>
+                                </p>
+                                <img src="./images/omiStory_Sign.png" alt="">
+                            </div>
+                            <div class="button">
+                                <a href="javascript:void(0)">
+                                    REGROW MY HAIR NOW
+                                    <img src="./images/Sec2_rightArrow.png" alt="">
+                                </a>
+                                <div class="rev">
+                                    <div class="star_rating_Img">
+                                        <img src="./images/riview.png" alt="">
+                                    </div>
+                                    <div>
+                                        Rated <strong>4.8/5</strong> Based on <strong>150+</strong> happy customers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="omiStory__content-right">
+                        <figure>
+                            <img src="./images/omiStory_right.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section-9 Regrowing Hair -->
+        <section class="regrowingHair">
+            <div class="container1286">
+                <div class="title">
+                    <h3>
+                        Join 1000s Of Women Regrowing Their Hair
+                    </h3>
+                    <p>
+                        Hear real success stories from OMI Hair Nutrition users:
+                    </p>
+                </div>
+              
+            </div>
+        </section>
     </main>
 </body>
 

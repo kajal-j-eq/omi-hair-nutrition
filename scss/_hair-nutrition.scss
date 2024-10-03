@@ -23,7 +23,7 @@
                 max-width: 100%;
             }
 
-            .product-slider-for {
+            .productSliderFor {
                 img {
                     width: 100%;
                     height: auto;
@@ -42,7 +42,7 @@
                     margin-top: 21px;
                 }
 
-                .product-slider-nav {
+                .productSliderNav {
                     width: 70%;
 
                     img {
@@ -75,6 +75,7 @@
                     width: 100%;
                     height: 100%;
                     align-items: center;
+                    cursor: pointer;
 
                     @include media991 {
                         max-width: 20px;
@@ -159,13 +160,18 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        font-size: 18px;
-                        font-weight: 450;
-                        line-height: 0.83;
 
                         img {
                             width: 40px;
                             height: 40px;
+                        }
+
+                        h6 {
+                            padding: 0;
+                            margin: 0;
+                            font-size: 18px;
+                            line-height: 0.83;
+                            font-family: $secondary-font;
                         }
                     }
 
@@ -201,6 +207,11 @@
                     padding-left: 8px;
                     font-size: 16px;
                     line-height: 0.73;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
                 }
             }
 
@@ -283,10 +294,16 @@
                     margin-right: 4px;
                 }
 
-                span {
-                    margin-left: 2px;
-                    font-weight: 400;
+                p {
+                    padding: 0;
+                    margin: 0;
+
+                    span {
+                        margin-left: 2px;
+                        font-weight: 400;
+                    }
                 }
+
             }
 
             .mb-review {
@@ -316,9 +333,14 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        font-size: 14px;
-                        font-weight: 450;
-                        line-height: 0.83;
+
+                        h6 {
+                            padding: 0;
+                            margin: 0;
+                            font-size: 14px;
+                            line-height: 0.83;
+                            font-family: $secondary-font;
+                        }
 
                         img {
                             width: 40px;
@@ -678,6 +700,11 @@
 
                 margin-top: 17px;
                 font-size: 14px;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
             }
 
             .pctAndAcco {
@@ -705,17 +732,20 @@
                         flex-direction: column;
                         text-align: center;
 
-                        >:nth-child(1) {
+                        h4 {
+                            margin: 0;
                             font-size: 36px;
-                            font-weight: 450;
                             line-height: 0.83;
+                            font-family: $secondary-font;
 
                             @include media991 {
                                 font-size: 28px;
                             }
                         }
 
-                        >:nth-child(2) {
+                        p {
+                            margin: 0;
+                            padding: 0;
                             margin-top: 19px;
                             font-size: 16px;
                             font-weight: 500;
@@ -732,6 +762,7 @@
                 }
 
                 .accordion-list {
+                    cursor: pointer;
                     padding: 0;
                     margin: 0;
                     margin-top: 28px;
@@ -744,9 +775,12 @@
                         padding-top: 20px;
                         padding-bottom: 20px;
 
-                        .title {
+                        h5 {
+                            margin: 0;
                             font-size: 20px;
                             font-family: $secondary-font;
+                            display: flex;
+                            justify-content: space-between;
 
                             @include media991 {
                                 font-size: 18px;

@@ -87,6 +87,16 @@
         @content;
     }
 }
+@mixin media360To991 {
+    @media only screen and (min-width: 360px) and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin media992To1500 {
+    @media only screen and (min-width: 992px) and (max-width: 1500px) {
+        @content;
+    }
+}
 
 $primary-font: 'Manrope';
 $secondary-font: 'Chronicle-Display';
