@@ -76,6 +76,16 @@
         @content;
     }
 }
+@mixin media1250 {
+    @media only screen and (max-width: 1250px) {
+        @content;
+    }
+}
+@mixin media1300-min {
+    @media only screen and (min-width: 1300px) {
+        @content;
+    }
+}
 
 @mixin media1500-min {
     @media only screen and (min-width: 1500px) {

@@ -1,0 +1,31 @@
+.disclaimers {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFAF2;
+
+    @include media991 {
+        width: 100%;
+    }
+
+    .container1500 {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        padding: 48px 0px;
+        @include media991 {
+            padding: 40px 20px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}

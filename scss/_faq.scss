@@ -1,0 +1,146 @@
+.faq {
+    display: flex;
+    justify-content: center;
+
+    @include media991 {
+        .container1500{
+            width: 100%;
+        }
+    }
+
+    &__content {
+        padding: 90px 127px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include media991 {
+            flex-direction: column;
+            padding: 36px 20px;
+        }
+
+        .left {
+            max-width: 400px;
+            width: 100%;
+
+            img {
+                max-width: 125.62px;
+                width: 100%;
+
+                @include media991 {
+                    display: none;
+                }
+            }
+
+            h3 {
+                margin-top: 22px;
+                font-size: 52px;
+                font-family: $secondary-font;
+                line-height: 1;
+                font-weight: 375;
+
+                @include media992To1500 {
+                    font-size: 3.467vw;
+                }
+
+                @include media991 {
+                    margin-top: 0px;
+                    font-size: 28px;
+                }
+            }
+
+            p {
+                margin-top: 27px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 0.83;
+
+                @include media991 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .right {
+            max-width: 61.156%;
+            width: 100%;
+
+            @include media991 {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    .js-faq-acc-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        cursor: pointer;
+                        font-size: 20px;
+                        margin: 0;
+                        font-family: $secondary-font;
+                        padding: 1rem 0;
+                        position: relative;
+
+                        @include media991 {
+                            padding-right: 58px;
+                        }
+                    }
+
+                    .js-faq-acc-header::after {
+                        content: "\002B";
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        background-color: #2E1A4A;
+                        color: #fff;
+                        border-radius: 50%;
+                        right: 1rem;
+                        border: none;
+
+                    }
+
+                    .js-faq-acc-header.active::after {
+                        content: "\2212";
+                    }
+
+                    div {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+                        font-size: 16px;
+                        font-weight: 400;
+
+                        p {
+                            margin-top: 6px;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            list-style: none;
+                            font-weight: 500;
+
+                            li {
+                                margin-right: 15px;
+
+                                img {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

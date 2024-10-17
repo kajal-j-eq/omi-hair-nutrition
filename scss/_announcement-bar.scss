@@ -22,7 +22,11 @@
             @include media991-min {
                 font-size: 18px;
             }
-    
+            @include media991-min {
+                li:last-of-type div {
+                    border-right: none;
+                }
+            }
             li {
                 padding: 0;
                 div {

@@ -3,6 +3,7 @@
     justify-content: center;
     background-color: #FFFAF2;
     padding-top: 90px;
+    overflow: hidden;
 
     @include media991 {
         padding: 20px 20px 0px 20px;
@@ -119,8 +120,12 @@
 
         &-right {
             max-width: 52.332%;
-            margin-left: 79px;
+            padding-left: 79px;
             display: block;
+
+            @include media1250 {
+                padding-left: 20px;
+            }
 
             @include media991 {
                 margin-left: 0px;
@@ -361,6 +366,8 @@
 
             }
 
+
+
             .subscription {
                 margin-top: 28px;
                 cursor: pointer;
@@ -375,323 +382,352 @@
                     font-family: $secondary-font;
                 }
 
-                .SubscriptionBoxDisplay {
-                    display: none;
-                    padding: 20px 23px 20px 20px;
-                    background-color: white;
+                form {
+                    ul {
+                        list-style: none;
 
-                    @include media991 {
-                        padding: 18px 14px;
-                    }
+                        li {
+                            .SubscriptionBoxDisplay {
+                                @include media991 {
+                                    .hideDetails {
+                                        flex-direction: column;
+                                    }
+                                }
 
-                    .title {
-                        display: flex;
-                        align-items: center;
-
-                        input[type="radio"] {
-                            width: 26px;
-                            height: 26px;
-                            accent-color: black;
-
-                            @include media991 {
-                                width: 20px;
-                                height: 20px;
-                            }
-                        }
-
-                        label {
-                            font-weight: 500;
-                            padding-left: 6px;
-                            font-size: 20px;
-                            line-height: 0.71;
-                            font-family: $secondary-font;
-
-                            @include media991 {
-                                font-size: 18px;
-                            }
-                        }
-                    }
-
-                    .plans {
-                        padding-top: 20px;
-                        display: flex;
-                        justify-content: space-between;
-
-                        @include media991 {
-                            display: block;
-                        }
-
-                        .mostPopular_plan {
-                            margin-right: 14px;
-
-                            @include media991 {
-                                margin-bottom: 14px;
-                            }
-                        }
-
-                        .mostPopular_plan,
-                        .bestValue_plan {
-                            width: 100%;
-
-                            @include media991 {
-                                width: 100%;
-                            }
-
-                            .title {
-                                width: 113px;
-                                margin-left: 20px;
-                                padding: 9px 0px;
-                                position: relative;
-                                color: white;
-                                background-color: #2E1A4A;
-                                font-size: 12px;
-                                font-weight: 700;
-                                line-height: 0.71;
-                                border-radius: 5px;
-                                display: flex;
-                                justify-content: center;
-                            }
-
-                            .info {
-                                margin-left: 0px;
-                                border: 3px solid #2E1A4A;
-                                margin-top: -15px;
-                                border-radius: 8px;
-                                padding-top: 20px;
-                                padding-left: 20px;
+                                padding: 20px 23px 20px 20px;
+                                background-color: white;
 
                                 @include media991 {
-                                    padding: 16px 16px 0px;
+                                    padding: 18px 14px;
                                 }
 
-                                p {
+                                .title {
+                                    display: flex;
+                                    align-items: center;
+
+                                    input[type="radio"] {
+                                        cursor: pointer;
+                                        width: 26px;
+                                        height: 26px;
+                                        accent-color: black;
+
+                                        @include media991 {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+
+                                    label {
+                                        font-weight: 500;
+                                        padding-left: 6px;
+                                        font-size: 20px;
+                                        line-height: 0.71;
+                                        font-family: $secondary-font;
+
+                                        @include media991 {
+                                            font-size: 18px;
+                                        }
+                                    }
+                                }
+
+                                .plans {
+                                    padding-top: 20px;
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    @include media991 {
+                                        display: block;
+                                    }
+
+                                    .mostPopular_plan {
+                                        margin-right: 14px;
+
+                                        @include media991 {
+                                            margin-bottom: 14px;
+                                        }
+                                    }
+
+                                    .mostPopular_plan,
+                                    .bestValue_plan {
+                                        width: 100%;
+
+                                        #option1,
+                                        #option2 {
+                                            display: none;
+                                        }
+
+                                        @include media991 {
+                                            width: 100%;
+                                        }
+
+                                        .title {
+                                            width: 113px;
+                                            margin-left: 20px;
+                                            padding: 9px 0px;
+                                            position: relative;
+                                            color: white;
+                                            background-color: #2E1A4A;
+                                            font-size: 12px;
+                                            font-weight: 700;
+                                            line-height: 0.71;
+                                            border-radius: 5px;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+
+                                        .info {
+                                            margin-left: 0px;
+                                            border: 3px solid #2E1A4A;
+                                            margin-top: -15px;
+                                            border-radius: 8px;
+                                            padding-top: 20px;
+                                            padding-left: 20px;
+
+                                            @include media991 {
+                                                padding: 16px 16px 0px;
+                                            }
+
+                                            p {
+                                                margin: 0;
+                                                padding: 0;
+
+                                            }
+
+                                            >:nth-child(1) {
+                                                font-size: 18px;
+
+                                                @include media991 {
+                                                    font-size: 16px;
+                                                }
+                                            }
+
+                                            >:nth-child(2) {
+                                                font-size: 14px;
+                                                margin-top: 6px;
+                                                width: 208px;
+
+                                                @include media991 {
+                                                    font-size: 11px;
+                                                    width: 100%;
+                                                }
+                                            }
+
+                                            >:nth-child(3) {
+                                                margin-top: 14px;
+                                                margin-bottom: 21px;
+                                                width: 115px;
+                                                font-size: 12px;
+                                                font-weight: 800;
+                                                line-height: 0.71;
+                                                color: #2E1A4A;
+                                                background: #2E1A4A1A;
+                                                padding-top: 9px;
+                                                padding-bottom: 9px;
+                                                display: flex;
+                                                justify-content: center;
+                                                border-radius: 70px;
+
+                                                @include media991 {
+                                                    width: 105px;
+                                                    font-size: 11px;
+                                                    margin-top: 12px;
+                                                    margin-bottom: 6px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                ul {
+                                    display: none;
                                     margin: 0;
                                     padding: 0;
+                                    list-style-type: none;
+                                    margin-top: 20px;
+                                    display: flex;
+
+                                    @include media991 {
+                                        display: block;
+                                        margin-top: 11px;
+                                    }
+
+                                    >li:first-child {
+                                        padding-left: 0px;
+                                    }
+
+                                    li {
+                                        padding-left: 20px;
+                                        display: flex;
+                                        font-size: 16px;
+                                        font-weight: 400;
+
+                                        @include media991 {
+                                            padding-left: 0px;
+                                            font-size: 14px;
+                                        }
+
+                                        img {
+                                            width: 20px;
+                                            height: 20px;
+                                            margin-right: 8px;
+
+                                            @include media991 {
+                                                width: 18px;
+                                                height: 18px;
+                                            }
+                                        }
+                                    }
 
                                 }
+                            }
 
-                                >:nth-child(1) {
-                                    font-size: 18px;
+                            .purchase {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 20px;
+                                background: white;
+                                margin-top: 26px;
+
+                                @include media991 {
+                                    padding: 14px;
+                                }
+
+                                .radioBtn {
+                                    display: flex;
+                                    align-items: center;
+
+                                    input[type="radio"] {
+                                        cursor: pointer;
+                                        width: 26px;
+                                        height: 26px;
+                                        accent-color: black;
+
+                                        @include media991 {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+
+                                    label {
+                                        padding-left: 6px;
+                                        font-size: 20px;
+                                        font-weight: 375;
+                                        line-height: 0.71;
+
+                                        @include media991 {
+                                            font-size: 18px;
+                                        }
+                                    }
+                                }
+
+                                .rupees {
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    line-height: 0.71;
 
                                     @include media991 {
                                         font-size: 16px;
                                     }
                                 }
+                            }
 
-                                >:nth-child(2) {
-                                    font-size: 14px;
-                                    margin-top: 6px;
-                                    width: 208px;
+                            .addToCart {
+                                a {
+                                    cursor: pointer;
+                                    margin-top: 28px;
 
                                     @include media991 {
-                                        font-size: 11px;
-                                        width: 100%;
+                                        margin-top: 22px;
                                     }
-                                }
 
-                                >:nth-child(3) {
-                                    margin-top: 14px;
-                                    margin-bottom: 21px;
-                                    width: 115px;
-                                    font-size: 12px;
-                                    font-weight: 800;
-                                    line-height: 0.71;
-                                    color: #2E1A4A;
-                                    background: #2E1A4A1A;
-                                    padding-top: 9px;
-                                    padding-bottom: 9px;
+                                    width: 100%;
                                     display: flex;
+                                    align-items: center;
                                     justify-content: center;
-                                    border-radius: 70px;
+                                    background: #F4B4A4;
+                                    border-radius: 120px;
+                                    color: white;
+                                    padding: 21px 0px;
+                                    font-size: 20px;
+                                    font-weight: 800;
+                                    text-decoration: none;
 
                                     @include media991 {
-                                        width: 105px;
-                                        font-size: 11px;
-                                        margin-top: 12px;
-                                        margin-bottom: 6px;
+                                        padding: 17.5px;
+                                    }
+
+                                    img {
+                                        width: 22px;
+                                        height: 18px;
+                                        margin-left: 16px;
+
+                                        @include media991 {
+                                            margin-left: 17.5px;
+                                        }
+                                    }
+
+                                }
+
+                                ul {
+                                    padding: 0;
+                                    margin: 0;
+                                    margin-top: 16px;
+                                    display: flex;
+                                    list-style-type: none;
+                                    font-size: 14px;
+                                    justify-content: space-between;
+
+                                    @include media991 {
+                                        display: block;
+                                    }
+
+                                    >:nth-child(1) img {
+                                        width: 27px;
+                                        height: 22px;
+                                        padding-right: 6px;
+
+                                        @include media991 {
+                                            width: 25px;
+                                            height: 20px;
+                                        }
+                                    }
+
+                                    li {
+                                        overflow: hidden;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        @include media991 {
+                                            justify-content: center;
+                                        }
+
+                                        img {
+                                            // padding-right: 15.37px;
+                                            width: 37.5px;
+                                            height: 20px;
+                                        }
+                                    }
+
+                                    >:nth-child(2) {
+                                        @include media991 {
+                                            margin-top: 16px;
+                                            justify-content: space-between;
+                                        }
                                     }
                                 }
                             }
-                        }
-                    }
 
-                    ul {
-                        margin: 0;
-                        padding: 0;
-                        list-style-type: none;
-                        margin-top: 20px;
-                        display: flex;
-
-                        @include media991 {
-                            display: block;
-                            margin-top: 11px;
-                        }
-
-                        >li:first-child {
-                            padding-left: 0px;
-                        }
-
-                        li {
-                            padding-left: 20px;
-                            display: flex;
-                            font-size: 16px;
-                            font-weight: 400;
-
-                            @include media991 {
-                                padding-left: 0px;
-                                font-size: 14px;
-                            }
-
-                            img {
-                                width: 20px;
-                                height: 20px;
-                                margin-right: 8px;
-
-                                @include media991 {
-                                    width: 18px;
-                                    height: 18px;
-                                }
-                            }
-                        }
-
-                    }
-                }
-
-                .purchase {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 20px;
-                    background: white;
-                    margin-top: 26px;
-
-                    @include media991 {
-                        padding: 14px;
-                    }
-
-                    .radioBtn {
-                        display: flex;
-                        align-items: center;
-
-                        input[type="radio"] {
-                            width: 26px;
-                            height: 26px;
-                            accent-color: black;
-
-                            @include media991 {
-                                width: 20px;
-                                height: 20px;
-                            }
-                        }
-
-                        label {
-                            padding-left: 6px;
-                            font-size: 20px;
-                            font-weight: 375;
-                            line-height: 0.71;
-
-                            @include media991 {
-                                font-size: 18px;
-                            }
-                        }
-                    }
-
-                    .rupees {
-                        font-size: 20px;
-                        font-weight: 700;
-                        line-height: 0.71;
-
-                        @include media991 {
-                            font-size: 16px;
                         }
                     }
                 }
+
+
+
             }
 
-            .addToCart {
-                margin-top: 28px;
 
-                @include media991 {
-                    margin-top: 22px;
-                }
-
-                a {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: #F4B4A4;
-                    border-radius: 120px;
-                    color: white;
-                    padding: 21px 0px;
-                    font-size: 20px;
-                    font-weight: 800;
-                    text-decoration: none;
-
-                    @include media991 {
-                        padding: 17.5px;
-                    }
-
-                    img {
-                        width: 22px;
-                        height: 18px;
-                        margin-left: 16px;
-
-                        @include media991 {
-                            margin-left: 17.5px;
-                        }
-                    }
-                }
-
-                ul {
-                    padding: 0;
-                    margin: 0;
-                    margin-top: 16px;
-                    display: flex;
-                    list-style-type: none;
-                    font-size: 14px;
-                    justify-content: space-between;
-
-                    @include media991 {
-                        display: block;
-                    }
-
-                    >:nth-child(1) img {
-                        width: 27px;
-                        height: 22px;
-                        padding-right: 6px;
-
-                        @include media991 {
-                            width: 25px;
-                            height: 20px;
-                        }
-                    }
-
-                    li {
-                        overflow: hidden;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-
-                        @include media991 {
-                            justify-content: center;
-                        }
-
-                        img {
-                            // padding-right: 15.37px;
-                            width: 37.5px;
-                            height: 20px;
-                        }
-                    }
-
-                    >:nth-child(2) {
-                        @include media991 {
-                            margin-top: 16px;
-                            justify-content: space-between;
-                        }
-                    }
-                }
-            }
 
             .mb-desc {
                 @include media991-min {

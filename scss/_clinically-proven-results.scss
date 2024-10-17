@@ -136,7 +136,9 @@
           right: -18px;
         }
       }
-
+      .slick-initialized .slick-slide{
+        display: block;
+      }
       .slick-dots li button {
         font-size: 0;
         width: 3px;

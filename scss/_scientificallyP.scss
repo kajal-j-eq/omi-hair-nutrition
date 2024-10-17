@@ -1,0 +1,209 @@
+.scientificallyP {
+    display: flex;
+    justify-content: center;
+    margin: 81px 0px;
+
+    @include media991 {
+        margin: 280x 0px;
+
+        .container {
+            width: 100%;
+
+        }
+    }
+
+    @include media1500-min {
+        .container {
+            width: 1292px;
+        }
+    }
+
+    &__content {
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-titles {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            h2 {
+                font-size: 52px;
+                line-height: 1;
+                font-family: $secondary-font;
+                padding: 0px 150px;
+                font-weight: 375;
+
+                @include media991 {
+                    font-size: 28px;
+                    padding: 0px;
+                    text-align: left;
+                }
+
+                @include media992To1500 {
+                    font-size: 3.467vw;
+                }
+            }
+
+            p {
+                margin-top: 26px;
+                font-size: 18px;
+                line-height: 1;
+                font-weight: 400;
+                line-height: 0.83;
+
+                @include media991 {
+                    font-size: 16px;
+                    text-align: left;
+                }
+            }
+        }
+
+        &-info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 60px;
+            flex-wrap: wrap;
+
+            @include media991 {
+                align-items: center;
+                margin-top: 0px;
+                flex-direction: column-reverse;
+            }
+
+            .left {
+                width: 49.841%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                @include media991 {
+                    width: 100%;
+                    display: block;
+                }
+
+                .ingredient {
+                    width: 286px;
+                    display: block;
+
+
+                    @include media1250 {
+                        width: 200px;
+                    }
+
+                    @include media991 {
+                        margin-top: 32px;
+                        width: 100%;
+                        display: flex;
+                    }
+
+                    img {
+                        max-width: 130px;
+                        width: 100%;
+                        height: auto;
+
+                        @include media991 {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+
+                    .info {
+                        h6 {
+                            margin-top: 6px;
+                            font-size: 24px;
+                            line-height: 0.83;
+                            font-family: $secondary-font;
+
+                            @include media991 {
+                                font-size: 18px;
+                                text-align: left;
+                            }
+                        }
+
+                        p {
+                            margin-top: 17px;
+                            font-size: 16px;
+                            line-height: 0.83;
+                            font-weight: 400;
+
+                            @include media991 {
+                                font-size: 14px;
+                                text-align: left;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .right {
+                background-color: #FFFAF2;
+                width: 50.159%;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0px -3px 6px rgba(255, 250, 242, 0.5);
+
+                @include media991 {
+                    margin-top: 32px;
+                    width: 320px;
+                    display: block;
+                }
+
+                img {
+                    padding: 30px 30px 0px;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+
+                    @include media991 {
+                        padding: 30px 20px 0px;
+                    }
+                }
+
+                .right_uspa-row {
+                    ul {
+                        overflow: hidden;
+                        height: 60px;
+                        background-color: #2E1A4A;
+                        color: white;
+                        list-style: none;
+                        padding: 15px 0px;
+
+                        li {
+                            div {
+                                display: flex;
+                                align-items: center;
+                                border-right: 1px solid;
+                                justify-content: center;
+
+                                img {
+                                    margin-right: 10px;
+                                    width: 32px;
+                                    height: auto;
+                                    box-sizing: content-box;
+                                    padding: 0px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+
+
+
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
