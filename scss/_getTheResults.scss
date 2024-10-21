@@ -1,0 +1,105 @@
+.getTheResults {
+    background-color: #FFFAF2;
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        padding: 90px 0px;
+
+        @include media991 {
+            padding: 36px 20px;
+        }
+        .titles {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            h2 {
+                font-size: 52px;
+                line-height: 1;
+                font-family: $secondary-font;
+                padding: 0px 150px;
+                font-weight: 375;
+
+                @include media991 {
+                    font-size: 28px;
+                    padding: 0px;
+                    text-align: left;
+                }
+
+                @include media992To1500 {
+                    font-size: 3.467vw;
+                }
+            }
+
+            p {
+                margin-top: 26px;
+                font-size: 18px;
+                line-height: 1;
+                font-weight: 400;
+                line-height: 0.83;
+
+                @include media991 {
+                    font-size: 16px;
+                    text-align: left;
+                    line-height: 1.2;
+                }
+            }
+        }
+        .about {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            text-align: start;
+
+            @include media991 {
+                display: block;
+                margin-top: 10px;
+            }
+
+            &__data {
+                max-width: 287.5px;
+                width: 100%;
+
+                @include media991 {
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #000000;
+                    padding-bottom: 22px;
+                    margin-top: 26px;
+                    max-width: 100%;
+                }
+
+                h3 {
+                    margin: 0;
+                    width: 100%;
+                    border-bottom: 1px solid #000000;
+                    font-size: 42px;
+                    font-family: $secondary-font;
+                    padding-bottom: 17px;
+
+                    @include media991 {
+                        border-bottom: none;
+                        padding-bottom: 0px;
+                        font-size: 36px;
+                        width: 25.396%;
+                    }
+                }
+
+                .info {
+                    margin: 0;
+                    padding: 0;
+                    padding-top: 24px;
+                    font-size: 18px;
+
+                    @include media991 {
+                        padding-top: 0px;
+                        font-size: 16px;
+                        margin-left: 33px;
+                    }
+                }
+            }
+        }
+    }
+}

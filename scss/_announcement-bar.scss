@@ -1,0 +1,71 @@
+.uspa {
+    background-color: #2E1A4A;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    .container {
+        margin: auto;
+        width: 1300px;
+    }
+    &__row {
+        @include align-items(Center);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.36;
+    
+        ul {
+            overflow: hidden;
+            margin: 0;
+            width: 100%;
+            padding: 15px 0px;
+    
+            @include media991-min {
+                font-size: 18px;
+            }
+            @include media991-min {
+                li:last-of-type div {
+                    border-right: none;
+                }
+            }
+            li {
+                padding: 0;
+                div {
+                    display: flex;
+                    @include media991-min{
+                        justify-content: center;
+                    }
+    
+                    img {
+                        height: 24px;
+                        width: 24px;
+    
+                        @include media991-min {
+                            height: 32px;
+                            width: 32px;
+                        }
+                    }
+    
+                    p {
+                        margin: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+    
+                    border-right: 1px solid;
+    
+                }
+    
+            }
+    
+            li:last-child {
+                border-right: none;
+                /* No border for the last child */
+            }
+        }
+    
+        &__line {
+            border: 1px solid white;
+        }
+    }
+}

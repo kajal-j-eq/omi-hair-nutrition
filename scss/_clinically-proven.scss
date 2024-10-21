@@ -1,0 +1,214 @@
+.clinically-proven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        display: flex;
+
+        @include media991 {
+            display: block;
+            margin-top: 32px;
+        }
+
+        &-left {
+            @include media991 {
+                padding: 36px 20px;
+            }
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #2E1A4A;
+            color: white;
+
+            @include media991-min {
+                width: 52.667%;
+            }
+
+            &__content {
+                margin: 45.5px 73px 45.5px 127px;
+
+                @include media991 {
+                    margin: 0px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                .title {
+                    h2{
+                        padding: 0;
+                        margin: 0;
+                        font-size: 52px;
+                        line-height: 1;
+                        font-family: $secondary-font;
+
+                        @include media992To1500 {
+                            font-size: 3.467vw;
+                        }
+
+                        @include media991 {
+                            font-size: 28px;
+                        }
+                    }
+
+                    h5{
+                        margin: 0;
+                        margin-top: 26PX;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 0.83;
+
+                        @include media992To1500 {
+                            font-size: 1.2vw;
+                        }
+                    }
+                }
+
+                .mb_img {
+                    @include media991-min {
+                        display: none;
+                    }
+
+                    margin-top: 32px;
+
+                    img {
+                        border-radius: 5px;
+                        max-width: 320px;
+                        width: 100%;
+                        height: 294px;
+                    }
+                }
+
+                .days {
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 50px;
+
+                    @include media991 {
+                        margin-top: 32px;
+                    }
+
+                    .day0,
+                    .day90 {
+                        display: flex;
+
+                        img {
+                            max-width: 100px;
+                            max-height: 100px;
+                            width: 100%;
+                            height: 100%;
+                            font-family: $secondary-font;
+
+                            @include media992To1500 {
+                                max-width: 80px;
+                                max-height: 80px;
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            @include media991 {
+                                max-width: 64px;
+                                max-height: 64px;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        &-data {
+                            padding: 17.5px 0px 17.5px 26px;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            @include media991 {
+                                margin-left: 18px;
+                                padding: 3px 0px;
+                            }
+
+                            h4{
+                                margin: 0;
+                                font-size: 28px;
+                                line-height: 0.9;
+                                font-family: $secondary-font;
+
+                                @include media992To1500 {
+                                    font-size: 1.867vw;
+                                }
+
+                                @include media991 {
+                                    font-size: 22px;
+                                }
+                            }
+
+                            p{
+                                padding: 0;
+                                margin: 0;
+                                font-size: 18px;
+                                font-weight: 450;
+                                line-height: 1;
+
+                                @include media992To1500 {
+                                    font-size: 1.2vw;
+                                }
+
+                                @include media991 {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+
+                    >li:nth-child(2) {
+                        margin-top: 25px;
+                    }
+                }
+                .rev{
+                    .star_rating{
+                        margin-right: 10px;
+                        @include media991{
+                            margin-right: 2px;
+                        }
+                    }
+                    display: flex;
+                }
+
+            }
+        }
+
+        &-right {
+            @include media991 {
+                display: none;
+            }
+
+            position: relative;
+            width: 100%;
+
+            @include media991-min {
+                width: 47.333%;
+            }
+
+            figure {
+                position: relative;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                padding-bottom: 125.497%;
+
+                img {
+                    position: absolute;
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+}

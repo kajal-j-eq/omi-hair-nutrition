@@ -1,0 +1,175 @@
+.reverseHair {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFAF2;
+
+    @include media991 {
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @include media991 {
+            padding: 0px 20px;
+            display: block;
+        }
+
+        .left {
+            padding: 0px 0px 0px 127px;
+            max-width: 41.267%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include media991 {
+                max-width: 100%;
+                padding: 0px;
+            }
+
+            .rev {
+                display: flex;
+                align-items: center;
+                margin-top: 22px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 0.73;
+
+                @include media992To1500 {
+                    font-size: 1.067vw;
+                }
+
+                @include media991 {
+                    font-size: 11px;
+                }
+
+                .star_rating_Img {
+                    img {
+                        max-width: 100px;
+                        width: 100%;
+                        margin-right: 8px;
+
+                        @include media992To1500 {
+                            max-width: 70px;
+                            width: 100%;
+                        }
+
+                        @include media991 {
+                            max-width: 63px;
+                            width: 100%;
+                            max-height: 11px;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            h5 {
+                margin-top: 16px;
+                font-size: 28px;
+                font-family: $secondary-font;
+                font-weight: 375;
+
+                @include media991 {
+                    font-size: 22px;
+                }
+            }
+
+            h4 {
+                margin-top: 9px;
+                font-size: 52px;
+                line-height: 0.83;
+                font-weight: 375;
+                font-family: $secondary-font;
+
+                @include media992To1500 {
+                    font-size: 3.467vw;
+                }
+
+                @include media991 {
+                    font-size: 28px;
+                }
+            }
+
+            p {
+                margin-top: 20px;
+
+                @include media991 {
+                    font-size: 16px;
+                }
+            }
+
+            .review {
+                margin-top: 30px;
+                background-color: white;
+
+                p {
+                    margin: 0;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    padding-top: 30px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+
+                .reviewSection {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    padding-top: 28px;
+                    padding-bottom: 22px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &-userName {
+                        width: 126px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        h6 {
+                            padding: 0;
+                            margin: 0;
+                            font-size: 18px;
+                            line-height: 0.83;
+                            font-family: $secondary-font;
+                        }
+                    }
+
+                    &-rating {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            max-width: 100px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .right {
+            max-width: 45.134%;
+            width: 100%;
+            overflow: hidden;
+
+            @include media991 {
+                max-width: 100%;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
